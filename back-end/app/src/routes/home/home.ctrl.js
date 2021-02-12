@@ -17,6 +17,12 @@ const output = {
 	register: (req, res) => {
 		res.render("./home/register");
 	},
+
+	time: async (req, res) => {
+		const user = new User(req.body);
+		const response = await user.getTime();
+		return res.json(response);
+	}
 };
 
 const process = {
@@ -30,6 +36,12 @@ const process = {
 		const response = await user.register();
 		return res.json(response);
 	},
+
+	time: async (req, res) => {
+		const user = new User(req.body);
+		const response = await user.saveTime();
+		return res.json(response);
+	}
 };
 // object key 하나만 입력 -> 키와 같은 value로 넣어줌 (ES6)
 module.exports = {

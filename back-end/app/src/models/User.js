@@ -2,6 +2,7 @@
 
 const { response } = require("express");
 const UserStorage = require("./UserStorage");
+const Time = require("./Time");
 
 class User {
     constructor(body) {
@@ -37,6 +38,25 @@ class User {
             const response = await UserStorage.save(client);
             return response;
         } catch (err) { 
+            return { success: false, msg: err };
+        }
+    }
+
+    async getTime() {
+        const client = this.body;
+        try {
+            const response = await Time.getTimeInfo(client.id);
+            return response;
+        } catch (err) {
+            return { success: false, msg: err };
+        }
+    }
+
+    async saveTime() {
+        const client = this.body;
+        try {
+
+        } catch (err) {
             return { success: false, msg: err };
         }
     }
