@@ -55,7 +55,8 @@ class User {
     async saveTime() {
         const client = this.body;
         try {
-
+            const response = await Time.save(client);
+            return response;
         } catch (err) {
             return { success: false, msg: err };
         }

@@ -7,6 +7,7 @@ const db = mysql.createConnection({
     user: "root",
     password: "testpassword",
     database: "JSM_CIRCLES",
+    multipleStatements: true,
 });
 
 db.connect();

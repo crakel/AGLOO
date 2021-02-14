@@ -12,6 +12,6 @@ router.get("/time", ctrl.output.time);
 
 router.post("/login", ctrl.process.login);
 router.post("/register", ctrl.process.register);
-router.post("/time", ctrl.process.time)
+router.post("/time", ctrl.process.time);
 
 module.exports = router;

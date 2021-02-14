@@ -19,6 +19,7 @@ const output = {
 	},
 
 	time: async (req, res) => {
+		req.body.id = req.query.id;
 		const user = new User(req.body);
 		const response = await user.getTime();
 		return res.json(response);
@@ -38,8 +39,9 @@ const process = {
 	},
 
 	time: async (req, res) => {
+		// req.session ?
 		const user = new User(req.body);
-		const response = await user.saveTime();
+		const response = await user.getTime();
 		return res.json(response);
 	}
 };
