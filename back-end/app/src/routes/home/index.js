@@ -14,7 +14,7 @@ router.post("/login", ctrl.process.login);
 router.post("/register", ctrl.process.register);
 router.post("/time", ctrl.process.insertTime);
 
-router.patch("/time", ctrl.process.updateTIme);
+router.patch("/time", ctrl.process.updateTime);
 router.delete("/time", ctrl.process.deleteTime);
 
 module.exports = router;

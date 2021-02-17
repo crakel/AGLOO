@@ -43,18 +43,20 @@ const process = {
 		const user = new User(req.body);
 		const response = await user.insertTime();
 		return res.json(response);
-	}
+	},
 
 	updateTime: async (req, res) => {
 		const user = new User(req.body);
 		const response = await user.updateTime();
 		return res.json(response);
-	}
+	},
 
 	deleteTime: async (req, res) => {
+		req.body.id = req.query.id;
 		const user = new User(req.body);
 		const response = await user.deleteTime();
 		return res.json(response);
+	}
 };
 // object key 하나만 입력 -> 키와 같은 value로 넣어줌 (ES6)
 module.exports = {

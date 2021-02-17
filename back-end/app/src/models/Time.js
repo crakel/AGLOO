@@ -38,9 +38,9 @@ class Time {
                 timeInfo.f0, timeInfo.f1, timeInfo.f2, timeInfo.f3, timeInfo.f4,
                 timeInfo.g0, timeInfo.g1, timeInfo.g2, timeInfo.g3, timeInfo.g4,
                 timeInfo.id
-                ] (err) => {
-                if (err) reject(`${err}`);
-                resolve({ success: true });
+                ], (err) => {
+                    if (err) reject(`${err}`);
+                    resolve({ success: true });
             });
         });
     }
@@ -50,7 +50,7 @@ class Time {
             const query = "DELETE FROM schedule WHERE id = ?;";
             db.query(query, [id], (err, data) => {
                 if (err) reject(`${err}`);
-                resolve(data[0]);
+                resolve({ success: true });
             });
         });
     }
