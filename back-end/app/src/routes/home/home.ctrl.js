@@ -18,7 +18,7 @@ const output = {
 		res.render("./home/register");
 	},
 
-	time: async (req, res) => {
+	getTime: async (req, res) => {
 		req.body.id = req.query.id;
 		const user = new User(req.body);
 		const response = await user.getTime();
@@ -38,12 +38,23 @@ const process = {
 		return res.json(response);
 	},
 
-	time: async (req, res) => {
+	insertTime: async (req, res) => {
 		// req.session ?
 		const user = new User(req.body);
-		const response = await user.getTime();
+		const response = await user.insertTime();
 		return res.json(response);
 	}
+
+	updateTime: async (req, res) => {
+		const user = new User(req.body);
+		const response = await user.updateTime();
+		return res.json(response);
+	}
+
+	deleteTime: async (req, res) => {
+		const user = new User(req.body);
+		const response = await user.deleteTime();
+		return res.json(response);
 };
 // object key 하나만 입력 -> 키와 같은 value로 넣어줌 (ES6)
 module.exports = {

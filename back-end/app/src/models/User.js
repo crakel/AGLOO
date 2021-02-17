@@ -48,19 +48,40 @@ class User {
             const response = await Time.getTimeInfo(client.id);
             return response;
         } catch (err) {
-            return { success: false, msg: err };
+            return { success: false, msg: "시간표 조회 실패" };
         }
     }
 
-    async saveTime() {
+    async insertTime() {
         const client = this.body;
         try {
-            const response = await Time.save(client);
+            const response = await Time.insert(client);
             return response;
         } catch (err) {
-            return { success: false, msg: err };
+            return { success: false, msg: "시간표 최초 저장 실패" };
         }
     }
+
+    async updateTime() {
+        const client = this.body;
+        try {
+            const response = await Time.update(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "시간표 수정 실패" };
+        }
+    }
+
+    async deleteTime() {
+        const client = this.body;
+        try {
+            const response = await Time.delete(client.id);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "시간표 수정 실패" };
+        }
+    }
+
 }
 
 module.exports = User;
