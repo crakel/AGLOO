@@ -1,8 +1,10 @@
 "use strict";
 
 const { response } = require("express");
+const bcryptjs = require("bcryptjs");
 const UserStorage = require("./UserStorage");
 const Time = require("./Time");
+const jwt = require("jsonwebtoken");
 
 class User {
     constructor(body) {
@@ -11,33 +13,45 @@ class User {
 
     async login() {
         const client = this.body;
-        console.log(client)
+        console.log(client);
+        
         try {
+            const token = jwt.sign({
+                id: client.id
+            },
+            process.env.SECRET, {
+                expiresIn: "30m"
+            })
+
             const { id, pw } = await UserStorage.getUserInfo(client.id);
+            const pw_sync = bcryptjs.compareSync(client.pw, pw);
+            console.log(client.pw)
+            console.log(pw_sync)
             // await 으로 promise를 반환하는 데이터를 다 받을때까지 기다림
             // await은 async함수 안에서만 사용 가능
             // async await 함수는 자체적으로 promise를 반환한다
             if (id) {
-                if (id === client.id && pw === client.pw) {
+                if (id === client.id && pw_sync) {
                     console.log("로그인성공");
-                    return { success : true };
+                    return { success: true, token: token};
                 }
                 console.log("비밀번호가 틀렸습니다");
-                return { success : false, msg: "비밀번호가 틀렸습니다" };
+                return { success: false, msg: "비밀번호가 틀렸습니다" };
             }
             console.log("존재하지 않는 아이디입니다.");
-            return { success : false, msg: "존재하지 않는 아이디입니다." };
+            return { success: false, msg: "존재하지 않는 아이디입니다." };
         } catch (err) {
-            return { success: false, msg: err };
+            return { success: false, msg: "에러" };
         }
     }
 
     async register() {
         const client = this.body;
         try {
+            console.log(client);
             const response = await UserStorage.save(client);
             return response;
-        } catch (err) { 
+        } catch (err) {
             return { success: false, msg: err };
         }
     }
@@ -81,7 +95,6 @@ class User {
             return { success: false, msg: "시간표 수정 실패" };
         }
     }
-
 }
 
 module.exports = User;

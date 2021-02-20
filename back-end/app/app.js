@@ -19,9 +19,10 @@
 // 모듈
 const express = require("express");
 const bodyParser = require("body-parser");
-const app = express();
+const dotenv = require("dotenv");
+dotenv.config();
 
-const PORT = 3000;
+const app = express();
 // 라우팅 
 const home = require("./src/routes/home");
 // 앱 세팅
