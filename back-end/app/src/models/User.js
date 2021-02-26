@@ -20,13 +20,11 @@ class User {
                 id: client.id
             },
             process.env.SECRET, {
-                expiresIn: "30m"
+                expiresIn: "1m"
             })
 
             const { id, pw } = await UserStorage.getUserInfo(client.id);
             const pw_sync = bcryptjs.compareSync(client.pw, pw);
-            console.log(client.pw)
-            console.log(pw_sync)
             // await 으로 promise를 반환하는 데이터를 다 받을때까지 기다림
             // await은 async함수 안에서만 사용 가능
             // async await 함수는 자체적으로 promise를 반환한다
@@ -48,7 +46,6 @@ class User {
     async register() {
         const client = this.body;
         try {
-            console.log(client);
             const response = await UserStorage.save(client);
             return response;
         } catch (err) {

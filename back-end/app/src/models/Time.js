@@ -1,14 +1,13 @@
 "use strict";
 
 const db = require("../config/db");
-const UserStorage = require("./UserStorage");
 
 class Time {
     // 시간표 불러오는 함수
-    static getTimeInfo(id) {
+    static async getTimeInfo(id) {
         return new Promise((resolve, reject) => {
             const query = "SELECT * FROM schedule WHERE id = ?;";
-            db.query(query, [id], (err, data) => {
+            db.query(query, id, (err, data) => {
                 if (err) reject(`${err}`);
                 resolve(data[0]);
             });

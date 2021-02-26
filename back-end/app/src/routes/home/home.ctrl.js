@@ -1,7 +1,8 @@
 "use strict";
 // controller file
 
-const User = require("../../models/User")
+const User = require("../../models/User");
+const Board = require("../../models/Board");
 
 
 const output = {
@@ -22,6 +23,16 @@ const output = {
 		req.body.id = req.query.id;
 		const user = new User(req.body);
 		const response = await user.getTime();
+		return res.json(response);
+	},
+
+	getBoard: async (req, res) => {
+		req.body.club = req.params.club;
+		req.body.board = req.params.board;
+		console.log(req.body);
+		const board = new Board(req.body);
+		const response = await board.getBoard();
+		res.render("./home/list", { title:'Board List', rows: response });
 		return res.json(response);
 	}
 };

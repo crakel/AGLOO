@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <table border="2">
+      <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>글쓴이</th>
+        <th>조회수</th>
+        <th>수정일</th>
+      </tr>
+      <%
+      for(var i = 0; i<rows.length; i++)
+      {
+      %>
+      <tr>
+        <td><%=rows[i].free_id%></td>
+        <td><%=rows[i].title%></td>
+        <td><%=rows[i].writer%></td>
+        <td><%=rows[i].hit%></td>
+        <td><%=rows[i].updated%></td>
+      </tr>
+      <%
+      }
+      %>
+
+    </table>
+  </body>
+</html>
