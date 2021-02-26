@@ -10,7 +10,8 @@ router.get("/", ctrl.output.home);
 router.get("/login", ctrl.output.login);
 router.get("/register", ctrl.output.register);
 router.get("/time", ctrl.output.getTime);
-router.get("/list/:club/:board/", ctrl.output.getBoard)
+router.get("/list/:club/:board/", ctrl.output.getBoard);
+router.get("/read/:board/:idx", ctrl.output.readPost);
 
 router.post("/auth", auth.auth);
 router.post("/login", ctrl.process.login);

@@ -18,8 +18,8 @@
       {
       %>
       <tr>
-        <td><%=rows[i].free_id%></td>
-        <td><%=rows[i].title%></td>
+        <td><%=rows[i].idx%></td>
+        <td><a href="/read/<%= title%>/<%=rows[i].idx%>"><%=rows[i].title%></a></td>
         <td><%=rows[i].writer%></td>
         <td><%=rows[i].hit%></td>
         <td><%=rows[i].updated%></td>

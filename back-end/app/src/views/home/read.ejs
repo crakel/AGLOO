@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <%
+    var read = rows;
+  %>
+  <body>
+    <h1><%= title %></h1>
+    <table border="2">
+      <tr>
+        <th>번호</th>
+        <td><%=read.idx%></td>
+        <th>조회수</th>
+        <td><%=read.hit%></td>
+        <th>글쓴이</th>
+        <td><%=read.writer%></td>
+      </tr>
+      <tr>
+        <th>제목</th>
+        <td colspan="5"><%=read.title%></td>
+      </tr>
+      <tr>
+        <th>작성일</th>
+        <td colspan="2"><%=read.created%></td>
+        <th>수정일</th>
+        <td colspan="2"><%=read.updated%></td>
+      </tr>
+      <tr>
+        <td colspan="6" height="400" ><%=read.content%></td>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <a href="/list/1/free_board"> 목록 </a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

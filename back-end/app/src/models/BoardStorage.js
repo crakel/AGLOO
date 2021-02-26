@@ -1,26 +1,30 @@
 "use strict";
-
+const mysql = require("mysql");
 const db = require("../config/db");
 
 class BoardStorage {
-    static async getPost(boardInfo) {
+    static async getPostList(boardInfo) {
         return new Promise((resolve, reject) => {
-            let query;
-            if (boardInfo.board == 'free') {
-                query = "SELECT free_id, title, writer, hit, DATE_FORMAT(updated, '%Y/%m/%d %T') as updated FROM free_board WHERE club_id =? ORDER BY free_id DESC;";
-            }
-            else if (boardInfo.board == "notice") {
-                query = "SELECT notice_id, title, writer, hit, DATE_FORMAT(updated, '%Y/%m/%d %T') as updated FROM notice_board WHERE notice_id =? ORDER BY notice_id DESC;";
-            }
-            else if (boardInfo.board == "pic") {
-                query = query = "SELECT pic_id, title, writer, hit, DATE_FORMAT(updated, '%Y/%m/%d %T') as updated pic_board WHERE club_id =? ORDER BY pic_id DESC;";
-            }
-            else if (boardInfo.board == "act") {
-                query = query = "SELECT act_id, title, writer, hit, DATE_FORMAT(updated, '%Y/%m/%d %T') as updated FROM act_board WHERE club_id =? ORDER BY act_id DESC;";
-            }
-            db.query(query, boardInfo.club, (err, data) => {
+            const query =
+                "SELECT idx, title, id, writer, hit, DATE_FORMAT(updated, '%Y/%m/%d %T') as updated FROM ?? WHERE club_id =? ORDER BY idx DESC;";
+            db.query(query, [boardInfo.board, boardInfo.club], (err, data) => {
                 if (err) reject(`${err}`);
                 resolve(data);
+            });
+        });
+    }
+    static async getPost(postInfo) {
+        return new Promise((resolve, reject) => {
+            const query1 = "UPDATE ?? SET hit=hit+1 WHERE idx=?";
+            const query2 = "SELECT idx, title, content, id, writer, hit, DATE_FORMAT(updated, '%Y/%m/%d %T') as updated FROM ?? WHERE idx=?;";
+            db.query(query1, [postInfo.board, postInfo.idx], (err, data) => {
+                if (err) reject(`${err}`);
+            });
+            
+            db.query(query2, [postInfo.board, postInfo.idx], (err, data) => {
+                if (err) reject(`${err}`);
+                console.log(data[0]);
+                resolve(data[0]);
             });
         });
     }

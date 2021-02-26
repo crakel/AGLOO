@@ -11,4 +11,10 @@ express.js
 nodemon
 pm2
 
-
+## MySQL 쿼리 변수담기
+```javascript
+var sql = "SELECT * FROM ?? WHERE ?? = ?";
+var inserts = ['users', 'id', userId];
+sql = mysql.format(sql, inserts);
+```
+?? 로 테이블, ?로 필드를 변수 매핑할 수 있다.

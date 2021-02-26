@@ -11,10 +11,20 @@ class Board {
     async getBoard() {
         const client = this.body;
         try {
+            const response = await BoardStorage.getPostList(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "게시판 조회 실패" };
+        }
+    }
+
+    async readPost() {
+        const client = this.body;
+        try {
             const response = await BoardStorage.getPost(client);
             return response;
         } catch (err) {
-            return { success: false, msg: "게시판 조회 실패"};
+            return { success: false, msg: "게시글 조회 실패" };
         }
     }
 }

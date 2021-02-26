@@ -9,7 +9,7 @@ const auth = (req, res, next) => {
     const decoded = jwt.verify(token, process.env.SECRET);
     // console.log(decoded)
     if(decoded) {
-        return res.json({ success: true, id: decoded.id})
+        return res.json({ success: true, id: decoded.id, name: decoded.name, st_id: decoded.st_id, major: decoded.major})
     }
 
     else {
