@@ -4,7 +4,7 @@ const db = require("../config/db");
 
 class Time {
     // 시간표 불러오는 함수
-    static async getTimeInfo(id) {
+    static async get(id) {
         return new Promise((resolve, reject) => {
             const query = "SELECT * FROM schedule WHERE id = ?;";
             db.query(query, id, (err, data) => {

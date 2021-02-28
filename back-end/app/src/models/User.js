@@ -1,6 +1,5 @@
 "use strict";
 
-const { response } = require("express");
 const bcryptjs = require("bcryptjs");
 const UserStorage = require("./UserStorage");
 const Time = require("./Time");
@@ -16,13 +15,10 @@ class User {
         console.log(client);
         
         try {
-            const { id, pw , name, st_id, major} = await UserStorage.getUserInfo(client.id);
+            const { id, pw } = await UserStorage.getLoginInfo(client.id);
             
             const token = jwt.sign({
-                id: id,
-                name: name,
-                st_id: st_id,
-                major: major
+                id: id
             },
             process.env.SECRET, {
                 expiresIn: "1m"
@@ -51,7 +47,8 @@ class User {
     async register() {
         const client = this.body;
         try {
-            const response = await UserStorage.save(client);
+            console.log(client);
+            const response = await UserStorage.insert(client);
             return response;
         } catch (err) {
             return { success: false, msg: err };
@@ -61,7 +58,7 @@ class User {
     async getTime() {
         const client = this.body;
         try {
-            const response = await Time.getTimeInfo(client.id);
+            const response = await Time.get(client.id);
             return response;
         } catch (err) {
             return { success: false, msg: "시간표 조회 실패" };
