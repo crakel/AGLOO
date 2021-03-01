@@ -3,6 +3,7 @@
 const bcryptjs = require("bcryptjs");
 const UserStorage = require("./UserStorage");
 const Time = require("./Time");
+const ClubStorage = require("./ClubStorage");
 const jwt = require("jsonwebtoken");
 
 class User {
@@ -86,6 +87,16 @@ class User {
     }
 
     async deleteTime() {
+        const client = this.body;
+        try {
+            const response = await Time.delete(client.id);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "시간표 수정 실패" };
+        }
+    }
+
+    async myClub() {
         const client = this.body;
         try {
             const response = await Time.delete(client.id);

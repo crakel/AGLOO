@@ -5,15 +5,13 @@ const jwt = require("jsonwebtoken");
 const auth = (req, res, next) => {
     // console.log(req.body.token);
     const token = req.body.token;
-
-    const decoded = jwt.verify(token, process.env.SECRET);
-    // console.log(decoded)
-    if (decoded) {
+    try {
+        const decoded = jwt.verify(token, process.env.SECRET);
         return res.json({
             success: true,
             id: decoded.id,
         });
-    } else {
+    } catch (err) {
         return res.json({ success: false });
     }
 };

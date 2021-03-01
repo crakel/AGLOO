@@ -76,23 +76,53 @@ const board = {
     readPost: async (req, res) => {
         req.body.board = req.params.board;
 		req.body.idx = req.params.idx;
-        const user = new Board(req.body);
-        const response = await user.readPost();
+        const board = new Board(req.body);
+        const response = await board.readPost();
 		// res.render("./home/read", { title: response.title, rows: response });
+        return res.json(response);
+    },
+
+    writePost: async (req, res) => {
+        req.body.club_id = req.params.club_id;
+        req.body.board = req.params.board;
+        const board = new Board(req.body);
+        const response = await board.writePost();
+        return res.json(response);
+    },
+
+    editPost: async (req, res) => {
+        req.body.board = req.params.board;
+        req.body.idx = req.params.idx;
+        const board = new Board(req.body);
+        const response = await board.editPost();
+        return res.json(response);
+    },
+    
+    delPost: async (req, res) => {
+        req.body.board = req.params.board;
+        req.body.idx = req.params.idx;
+        const board = new Board(req.body);
+        const response = await board.delPost();
         return res.json(response);
     },
 };
 
 const club = {
     home: async (req, res) => {
-        const club = new Club(req.params.club);
+        const club = new Club(req.params.club_id);
         const response = await club.home();
         return res.json(response);
     },
 
     member: async (req, res) => {
-        const club = new Club(req.params.club);
+        const club = new Club(req.params.club_id);
         const response = await club.member();
+        return res.json(response);
+    },
+
+    myClub: async (req, res) => {
+        const club = new Club(req.params.id);
+        const response = await club.myClub();
         return res.json(response);
     },
 

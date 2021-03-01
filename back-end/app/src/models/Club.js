@@ -11,32 +11,43 @@ class Club {
     async home() {
         const client = this.body;
         try {
-            const user = await UserStorage.getUserInfo("qq");
-            console.log(user)
             const response = await ClubStorage.getClubInfo(client);
             return response;
         } catch (err) {
-            return { success: false, msg: "동아리 페이지 조희 실패" };
+            return { success: false, msg: "동아리 페이지 조회 실패" };
         }
     }
     
     async member() {
         const client = this.body;
         try {
-            let member = await ClubStorage.getClubMember(client);
-            console.log(member[0].id);
-            let response = [];
-            for (let i =0; i < member.length; i++) {
+            const member = await ClubStorage.getClubMember(client);
+            const response = [];
+            for (let i = 0; i < member.length; i++) {
                 const info = await UserStorage.getUserInfo(member[i].id);
                 response.push(info);
+            }
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 회원 조회 실패" };
+        }
+    }
+    
+    async myClub() {
+        const client = this.body;
+        try {
+            const myclub = await ClubStorage.getMyClub(client)
+            const response = [];
+            for (let i = 0; i < myclub.length; i++) {
+                const info = await ClubStorage.getClubImg(myclub[i].club_id);
+                response.push(info)
             }
             console.log(response);
             return response;
         } catch (err) {
-            return { success: false, msg: "동아리 회원 조희 실패" };
+            return { success: false, msg: "내 동아리 조회 실패" };
         }
     }
-    
 }
 
 module.exports = Club;

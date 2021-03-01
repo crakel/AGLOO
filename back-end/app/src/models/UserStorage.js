@@ -16,7 +16,7 @@ class UserStorage {
 
     static async getUserInfo(id) {
         return new Promise((resolve, reject) => {
-            const query = "SELECT name, st_id, major FROM users WHERE id = ?;";
+            const query = "SELECT id, name, st_id, major FROM users WHERE id = ?;";
             db.query(query, id, (err, data) => {
                 if (err) reject(`${err}`);
                 resolve(data[0]);
