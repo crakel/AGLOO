@@ -8,7 +8,6 @@ class ClubStorage {
             const query = "SELECT * FROM club WHERE club_id=?;";
             db.query(query, club_id, (err, data) => {
                 if (err) reject(`${err}`);
-                console.log(data[0]);
                 resolve(data[0]);
             });
         });
@@ -34,6 +33,16 @@ class ClubStorage {
         });
     }
 
+    static async getAllClub() {
+        return new Promise((resolve, reject) => {
+            const query = "SELECT club_id, club_name, depart, img FROM club;";
+            db.query(query, (err, data) => {
+                if (err) reject(`${err}`);
+                resolve(data);
+            });
+        });
+    }
+    
     static async getMyClub(id) {
         return new Promise((resolve, reject) => {
             const query = "SELECT club_id FROM participate WHERE id=?;";
@@ -43,6 +52,18 @@ class ClubStorage {
             });
         });
     }
+
+    static async searchClub(club_name) {
+        return new Promise((resolve, reject) => {
+            const query = "SELECT club_id FROM club WHERE club_name=?;";
+            db.query(query, club_name, (err, data) => {
+                if (err) reject(`${err}`);
+                resolve(data[0]);
+            });
+        });
+    }
+
+    
 
 
 

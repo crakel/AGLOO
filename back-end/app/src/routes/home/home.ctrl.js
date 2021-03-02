@@ -42,7 +42,6 @@ const time = {
     },
 
     insertTime: async (req, res) => {
-        // req.session ?
         const user = new User(req.body);
         const response = await user.insertTime();
         return res.json(response);
@@ -120,9 +119,21 @@ const club = {
         return res.json(response);
     },
 
+    allClub: async (req, res) => {
+        const club = new Club();
+        const response = await club.allClub();
+        return res.json(response);
+    },
+
     myClub: async (req, res) => {
         const club = new Club(req.params.id);
         const response = await club.myClub();
+        return res.json(response);
+    },
+
+    search: async (req, res) => {
+        const club = new Club(req.query.club_name);
+        const response = await club.search();
         return res.json(response);
     },
 

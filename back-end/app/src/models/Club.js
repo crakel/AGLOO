@@ -32,7 +32,16 @@ class Club {
             return { success: false, msg: "동아리 회원 조회 실패" };
         }
     }
-    
+
+    async allClub() {
+        try {
+            const response = await ClubStorage.getAllClub();
+            return response;
+        } catch (err) {
+            return { success: false, msg: "전체 동아리 조회 실패" };
+        }
+    }
+
     async myClub() {
         const client = this.body;
         try {
@@ -42,10 +51,19 @@ class Club {
                 const info = await ClubStorage.getClubImg(myclub[i].club_id);
                 response.push(info)
             }
-            console.log(response);
             return response;
         } catch (err) {
             return { success: false, msg: "내 동아리 조회 실패" };
+        }
+    }
+
+    async search() {
+        const client = this.body;
+        try {
+            const response = await ClubStorage.searchClub(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 검색 실패" };
         }
     }
 }
