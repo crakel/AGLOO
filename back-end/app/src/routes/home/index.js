@@ -36,13 +36,17 @@ router.delete("/del/:board/:idx", ctrl.board.delPost);
 // 동아리 API
 router.get("/club/:club_id", ctrl.club.home);
 router.get("/club/:club_id/member", ctrl.club.member);
-router.get("/club/", ctrl.club.allClub);
+router.get("/club", ctrl.club.allClub);
 router.get("/myclub/:id", ctrl.club.myClub);
 router.get("/search", ctrl.club.search);
-// router.get("/club/:club/join", ctrl.club.join);
 
-// router.post("/club_img", upload.single('club_img'), ctrl.upload.clubImg);
+router.post("/club", upload.single('img'), ctrl.club.create);
+router.patch("/club", upload.single('img'), ctrl.club.edit);
+router.delete("/club/:club_id", ctrl.club.delete);
 
+router.post("/creator", ctrl.club.creator);
+router.post("/join", ctrl.club.join);
+router.get("/isMember/:club_id/:id", ctrl.club.isMember);
 
 
 module.exports = router;

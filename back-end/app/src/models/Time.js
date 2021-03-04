@@ -47,7 +47,7 @@ class Time {
     static async delete(id) {
         return new Promise((resolve, reject) => {
             const query = "DELETE FROM schedule WHERE id = ?;";
-            db.query(query, [id], (err) => {
+            db.query(query, id, (err) => {
                 if (err) reject(`${err}`);
                 resolve({ success: true });
             });

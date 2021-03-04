@@ -66,6 +66,66 @@ class Club {
             return { success: false, msg: "동아리 검색 실패" };
         }
     }
+
+    async create() {
+        const client = this.body;
+        try {
+            const response = await ClubStorage.insertClub(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 생성 실패" };
+        }
+    }
+
+    async edit() {
+        const client = this.body;
+        try {
+            const response = await ClubStorage.updateClub(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 수정 실패" };
+        }
+    }
+
+    async delete() {
+        const client = this.body;
+        try {
+            const response = await ClubStorage.updateClub(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 삭제 실패" };
+        }
+    }
+
+    async creator() {
+        const client = this.body;
+        try {
+            const response = await ClubStorage.creatorClub(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 관리자 권한 부여 실패" };
+        }
+    }
+
+    async join() {
+        const client = this.body;
+        try {
+            const response = await ClubStorage.joinClub(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 가입 실패" };
+        }
+    }
+
+    async isMember() {
+        const client = this.body;
+        try {
+            const response = await ClubStorage.isMember(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 가입 조회 실패" };
+        }
+    }
 }
 
 module.exports = Club;

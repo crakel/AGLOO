@@ -137,11 +137,57 @@ const club = {
         return res.json(response);
     },
 
-    // insertClub: async (req, res) => {
-    //     const url = '/upload/' + req.file.filename;
-    //     const club_id = req.body.club_id;
-    //     const response = await clubImg(req.body);
-    // },
+    create: async (req, res) => {
+        let array = req.file.originalname.split('.'); 
+        array[0] = array[0] + '_'; 
+        array[1] = '.' + array[1];
+        array.splice(1, 0, Date.now().toString());
+        const result = array.join('');
+        req.body.img = '/upload/' + result;
+
+        const club = new Club(req.body);
+        const response = await club.create();
+        return res.json(response);
+    },
+    
+    edit: async (req, res) => {
+        let array = req.file.originalname.split('.'); 
+        array[0] = array[0] + '_'; 
+        array[1] = '.' + array[1];
+        array.splice(1, 0, Date.now().toString());
+        const result = array.join('');
+        req.body.img = '/upload/' + result;
+        
+        const club = new Club(req.body);
+        const response = await club.edit();
+        return res.json(response);
+    },
+    
+    delete: async (req, res) => {
+        const club = new Club(req.params.club_id);
+        const response = await club.edit();
+        return res.json(response);
+    },
+
+    creator: async (req, res) => {
+        const club = new Club(req.body);
+        const response = await club.edit();
+        return res.json(response);
+    },
+
+    join: async (req, res) => {
+        const club = new Club(req.body);
+        const response = await club.join();
+        return res.json(response);
+    },
+    
+    isMember: async (req, res) => {
+        req.body.club_id = req.params.club_id;
+        req.body.id = req.params.id;
+        const club = new Club(req.body);
+        const response = await club.isMember();
+        return res.json(response);
+    },
 };
 // object key 하나만 입력 -> 키와 같은 value로 넣어줌 (ES6)
 module.exports = {
