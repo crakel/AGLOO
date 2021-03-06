@@ -2,6 +2,7 @@
 
 const { response } = require("express");
 const BoardStorage = require("./BoardStorage");
+const CmntStorage = require("./CmntStorage");
 const UserStorage = require("./UserStorage");
 
 class Board {
@@ -19,6 +20,7 @@ class Board {
         }
     }
 
+    // 게시글 CRUD
     async readPost() {
         const client = this.body;
         try {
@@ -60,6 +62,51 @@ class Board {
             return response;
         } catch (err) {
             return { success: false, msg: "게시글 삭제 실패" };
+        }
+    }
+
+    // 댓글 CRUD
+    async readCmnt() {
+        const client = this.body;
+        try {
+            const response = await CmntStorage.getCmnt(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "댓글 조회 실패" };
+        }
+    }
+
+    async writeCmnt() {
+        const client = this.body;
+        try {
+            const info = await UserStorage.getUserInfo(client.id);
+            const writer = info.name; 
+            client.writer = writer;
+            const response = await CmntStroage.insertCmnt(client);
+            return response;
+        } catch (err) {
+            return { success : false, msg: "댓글 작성 실패" };
+        }
+    }
+
+
+    async editCmnt() {
+        const client = this.body;
+        try {
+            const response = await CmntStorage.updateCmnt(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "댓글 수정 실패" };
+        }
+    }
+
+    async delCmnt() {
+        const client = this.body;
+        try {
+            const response = await CmntStorage.deleteCmnt(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "댓글 삭제 실패" };
         }
     }
 }

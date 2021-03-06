@@ -90,7 +90,7 @@ class Club {
     async delete() {
         const client = this.body;
         try {
-            const response = await ClubStorage.updateClub(client);
+            const response = await ClubStorage.deleteClub(client);
             return response;
         } catch (err) {
             return { success: false, msg: "동아리 삭제 실패" };
@@ -100,6 +100,9 @@ class Club {
     async creator() {
         const client = this.body;
         try {
+            const search = await ClubStorage.searchClub(client.club_name);
+            console.log(search);
+            client.club_id = search.club_id;
             const response = await ClubStorage.creatorClub(client);
             return response;
         } catch (err) {

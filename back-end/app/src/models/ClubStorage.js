@@ -85,8 +85,13 @@ class ClubStorage {
 
     static async deleteClub(club_id) {
         return new Promise((resolve, reject) => {
-            const query = "DELETE FROM club WHERE club_id=?;";
-            db.query(query, club_id, (err) => {
+            const query1 = "DELETE FROM participate WHERE club_id=?;";
+            const query2 = "DELETE FROM club WHERE club_id=?;";
+            db.query(query1, club_id, (err) => {
+                if (err) reject(`${err}`);
+            });
+            
+            db.query(query2, club_id, (err) => {
                 if (err) reject(`${err}`);
                 resolve({ success : true });
             });
@@ -115,11 +120,11 @@ class ClubStorage {
 
     static async isMember(info) {
         return new Promise((resolve, reject) => {
-            const query = "SELECT * FROM participate WHERE club_id=? AND id=? AND manage=0;";
+            const query = "SELECT * FROM participate WHERE club_id=? AND id=?;";
             db.query(query, [info.club_id, info.id], (err, data) => {
                 if (err) reject(`${err}`);
-                console.log(data)
-                if (data[0]) resolve({ member : true });
+                if (data[0] && data[0].manage == 0) resolve({ member : true });
+                else if (data[0] && data[0].manage == 1) resolve({ member : "admin" });
                 else resolve({ member: false });
             });
         });

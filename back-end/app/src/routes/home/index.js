@@ -27,11 +27,16 @@ router.patch("/time", ctrl.time.updateTime);
 router.delete("/time", ctrl.time.deleteTime);
 
 // 게시판 API
-router.get("/list/:club_id/:board/", ctrl.board.getBoard);
-router.get("/read/:board/:idx", ctrl.board.readPost);
-router.post("/write/:club_id/:board/", ctrl.board.writePost);
-router.patch("/edit/:board/:idx", ctrl.board.editPost);
-router.delete("/del/:board/:idx", ctrl.board.delPost);
+router.get("/list/:club_id/:board", ctrl.board.getBoard);
+router.get("/post/:board/:idx", ctrl.board.readPost);
+router.post("/post/:club_id/:board", ctrl.board.writePost);
+router.patch("/post/:board/:idx", ctrl.board.editPost);
+router.delete("/post/:board/:idx", ctrl.board.delPost);
+
+router.get("/cmnt/:board/:idx", ctrl.board.readCmnt);
+router.post("/cmnt/:board/:board_idx", ctrl.board.writePost);
+router.patch("/cmnt/:board/:board_idx/:idx", ctrl.board.editPost);
+router.delete("/cmnt/:board/:board_idx/:idx", ctrl.board.delPost);
 
 // 동아리 API
 router.get("/club/:club_id", ctrl.club.home);

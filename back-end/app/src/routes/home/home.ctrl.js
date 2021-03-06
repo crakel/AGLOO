@@ -104,6 +104,38 @@ const board = {
         const response = await board.delPost();
         return res.json(response);
     },
+
+    readCmnt: async (req, res) => {
+        req.body.board = req.params.board;
+		req.body.idx = req.params.idx;
+        const board = new Board(req.body);
+        const response = await board.readCmnt();
+        return res.json(response);
+    },
+
+    writeCmnt: async (req, res) => {
+        req.body.board = req.params.board;
+        req.body.board_idx = req.params.board_idx;
+        const board = new Board(req.body);
+        const response = await board.writeCmnt();
+        return res.json(response);
+    },
+
+    editCmnt: async (req, res) => {
+        req.body.board = req.params.board;
+        req.body.idx = req.params.idx;
+        const board = new Board(req.body);
+        const response = await board.editCmnt();
+        return res.json(response);
+    },
+    
+    delCmnt: async (req, res) => {
+        req.body.board = req.params.board;
+        req.body.idx = req.params.idx;
+        const board = new Board(req.body);
+        const response = await board.delCmnt();
+        return res.json(response);
+    },
 };
 
 const club = {
@@ -138,12 +170,18 @@ const club = {
     },
 
     create: async (req, res) => {
+        if (req.file) {
         let array = req.file.originalname.split('.'); 
         array[0] = array[0] + '_'; 
         array[1] = '.' + array[1];
         array.splice(1, 0, Date.now().toString());
         const result = array.join('');
         req.body.img = '/upload/' + result;
+        }
+
+        else {
+            req.body.img = '/upload/default.png';
+        }
 
         const club = new Club(req.body);
         const response = await club.create();
@@ -165,13 +203,13 @@ const club = {
     
     delete: async (req, res) => {
         const club = new Club(req.params.club_id);
-        const response = await club.edit();
+        const response = await club.delete();
         return res.json(response);
     },
 
     creator: async (req, res) => {
         const club = new Club(req.body);
-        const response = await club.edit();
+        const response = await club.creator();
         return res.json(response);
     },
 
