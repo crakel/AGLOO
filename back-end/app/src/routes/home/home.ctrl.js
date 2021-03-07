@@ -62,6 +62,13 @@ const time = {
 };
 
 const board = {
+    feed: async (req, res) => {
+        req.body.id = req.params.id;
+        const board = new Board(req.body);
+        const response = await board.feed();
+        return res.json(response);
+    },
+
     getBoard: async (req, res) => {
         req.body.club_id = req.params.club_id;
         req.body.board = req.params.board;
@@ -170,24 +177,19 @@ const club = {
     },
 
     create: async (req, res) => {
+        console.log(req.file);
         if (req.file) {
-        let array = req.file.originalname.split('.'); 
-        array[0] = array[0] + '_'; 
-        array[1] = '.' + array[1];
-        array.splice(1, 0, Date.now().toString());
-        const result = array.join('');
-        req.body.img = '/upload/' + result;
+            req.body.img = '/upload/' + req.file.filename;
         }
-
         else {
             req.body.img = '/upload/default.png';
         }
-
+        req.body = JSON.parse(JSON.stringify(req.body));
         const club = new Club(req.body);
         const response = await club.create();
         return res.json(response);
     },
-    
+
     edit: async (req, res) => {
         let array = req.file.originalname.split('.'); 
         array[0] = array[0] + '_'; 
@@ -216,6 +218,12 @@ const club = {
     join: async (req, res) => {
         const club = new Club(req.body);
         const response = await club.join();
+        return res.json(response);
+    },
+    
+    unjoin: async (req, res) => {
+        const club = new Club(req.body);
+        const response = await club.unjoin();
         return res.json(response);
     },
     

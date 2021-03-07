@@ -2,7 +2,17 @@
 
 const express = require("express");
 const multer = require("multer");
-const upload = multer({ dest: '/upload' });
+
+const Storage = multer.diskStorage({
+    destination(req, file, callback) {
+        callback(null, "./src/public/upload");
+    },
+    filename(req, file, callback) {
+        callback(null, `${file.fieldname}_${Date.now()}_${file.originalname}`);
+    },
+});
+
+const upload = multer({ storage: Storage });
 const router = express.Router();
 
 const ctrl = require("./home.ctrl");
@@ -20,6 +30,9 @@ router.post("/register", ctrl.process.register);
 // 토큰 인증 API
 router.post("/auth", auth.auth);
 
+// 개인 피드 API
+router.get("/feed/:id", ctrl.board.feed);
+
 // 시간표 API
 router.get("/time", ctrl.time.getTime);
 router.post("/time", ctrl.time.insertTime);
@@ -34,9 +47,9 @@ router.patch("/post/:board/:idx", ctrl.board.editPost);
 router.delete("/post/:board/:idx", ctrl.board.delPost);
 
 router.get("/cmnt/:board/:idx", ctrl.board.readCmnt);
-router.post("/cmnt/:board/:board_idx", ctrl.board.writePost);
-router.patch("/cmnt/:board/:board_idx/:idx", ctrl.board.editPost);
-router.delete("/cmnt/:board/:board_idx/:idx", ctrl.board.delPost);
+router.post("/cmnt/:board/:board_idx", ctrl.board.writeCmnt);
+router.patch("/cmnt/:board/:idx", ctrl.board.editCmnt);
+router.delete("/cmnt/:board/:idx", ctrl.board.delCmnt);
 
 // 동아리 API
 router.get("/club/:club_id", ctrl.club.home);
@@ -45,13 +58,22 @@ router.get("/club", ctrl.club.allClub);
 router.get("/myclub/:id", ctrl.club.myClub);
 router.get("/search", ctrl.club.search);
 
-router.post("/club", upload.single('img'), ctrl.club.create);
-router.patch("/club", upload.single('img'), ctrl.club.edit);
+router.post("/club", upload.single("img"), ctrl.club.create);
+router.patch("/club", upload.single("img"), ctrl.club.edit);
 router.delete("/club/:club_id", ctrl.club.delete);
+
+// router.post("/up", upload.single("img"), (req, res) => {
+//     console.log(req.file);
+//     console.log(req.file.filename);
+//     console.log("보내짐");
+//     res.status(200).json({
+//         message: "success!",
+//     });
+// });
 
 router.post("/creator", ctrl.club.creator);
 router.post("/join", ctrl.club.join);
+router.post("/unjoin", ctrl.club.unjoin);
 router.get("/isMember/:club_id/:id", ctrl.club.isMember);
-
 
 module.exports = router;

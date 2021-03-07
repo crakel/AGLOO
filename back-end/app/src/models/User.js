@@ -22,7 +22,7 @@ class User {
                 id: id
             },
             process.env.SECRET, {
-                expiresIn: "1m"
+                expiresIn: "60m"
             })
 
             

@@ -17,8 +17,9 @@ class CmntStorage {
     
     static async insertCmnt(cmntInfo) {
         return new Promise((resolve, reject) => {
+            console.log(cmntInfo);
             const query =
-                "INSERT INTO ?? (board_idx, id, writer, content) VALUES (?, ?, ?, ?);";
+                "INSERT INTO ?? (board_idx, id, writer, comment) VALUES (?, ?, ?, ?);";
             db.query(query, [cmntInfo.board, cmntInfo.board_idx, cmntInfo.id, cmntInfo.writer, cmntInfo.comment], (err) => {
                 if (err) reject(`${err}`);
                 resolve({ success: true });
@@ -29,7 +30,7 @@ class CmntStorage {
     static async updateCmnt(cmntInfo) {
         return new Promise((resolve, reject) => {
             const query =
-                "UPDATE ?? SET comment=?, WHERE idx =?;";
+                "UPDATE ?? SET comment=? WHERE idx =?;";
             db.query(query, [cmntInfo.board, cmntInfo.comment, cmntInfo.idx], (err) => {
                 if (err) reject(`${err}`);
                 resolve({ success: true });

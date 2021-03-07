@@ -82,7 +82,7 @@ class Board {
             const info = await UserStorage.getUserInfo(client.id);
             const writer = info.name; 
             client.writer = writer;
-            const response = await CmntStroage.insertCmnt(client);
+            const response = await CmntStorage.insertCmnt(client);
             return response;
         } catch (err) {
             return { success : false, msg: "댓글 작성 실패" };

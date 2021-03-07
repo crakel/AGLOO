@@ -63,5 +63,16 @@ class BoardStorage {
             });
         });
     }
+
+    static async getFreeFeed(club_id) {
+        return new Promise((resolve, reject) => {
+            const query =
+                "SELECT idx, club_id, id, writer, title, hit, DATE_FORMAT(created, '%Y/%m/%d %T') as created, DATE_FORMAT(updated, '%Y/%m/%d %T') as updated FROM free_board WHERE club_id =? ORDER BY idx DESC LIMIT 3;";
+            db.query(query, [boardInfo.club_id], (err, data) => {
+                if (err) reject(`${err}`);
+                resolve(data);
+            });
+        });
+    }
 }
 module.exports = BoardStorage;

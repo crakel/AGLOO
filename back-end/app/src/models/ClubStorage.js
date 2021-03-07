@@ -65,6 +65,8 @@ class ClubStorage {
 
     static async insertClub(club_info) {
         return new Promise((resolve, reject) => {
+            console.log("clubinfo", club_info);
+            console.log("clubname", club_info.club_name);
             const query = "INSERT INTO club(club_name, depart, sort, img, locate, time, phone, insta, intro, memo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
             db.query(query, [club_info.club_name, club_info.depart, club_info.sort, club_info.img, club_info.locate, club_info.time, club_info.phone, club_info.insta, club_info.intro, club_info.memo], (err) => {
                 if (err) reject(`${err}`);
@@ -111,6 +113,16 @@ class ClubStorage {
     static async joinClub(info) {
         return new Promise((resolve, reject) => {
             const query = "INSERT INTO participate(club_id, id, manage) VALUES (?, ?, 0)";
+            db.query(query, [info.club_id, info.id], (err) => {
+                if (err) reject(`${err}`);
+                resolve({ success : true });
+            });
+        });
+    }
+
+    static async unjoinClub(info) {
+        return new Promise((resolve, reject) => {
+            const query = "DELETE FROM participate WHERE club_id=? AND id=?;";
             db.query(query, [info.club_id, info.id], (err) => {
                 if (err) reject(`${err}`);
                 resolve({ success : true });

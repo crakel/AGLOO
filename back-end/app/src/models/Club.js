@@ -17,7 +17,7 @@ class Club {
             return { success: false, msg: "동아리 페이지 조회 실패" };
         }
     }
-    
+
     async member() {
         const client = this.body;
         try {
@@ -45,11 +45,11 @@ class Club {
     async myClub() {
         const client = this.body;
         try {
-            const myclub = await ClubStorage.getMyClub(client)
+            const myclub = await ClubStorage.getMyClub(client);
             const response = [];
             for (let i = 0; i < myclub.length; i++) {
                 const info = await ClubStorage.getClubImg(myclub[i].club_id);
-                response.push(info)
+                response.push(info);
             }
             return response;
         } catch (err) {
@@ -117,6 +117,16 @@ class Club {
             return response;
         } catch (err) {
             return { success: false, msg: "동아리 가입 실패" };
+        }
+    }
+
+    async unjoin() {
+        const client = this.body;
+        try {
+            const response = await ClubStorage.unjoinClub(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 탈퇴 실패" };
         }
     }
 
