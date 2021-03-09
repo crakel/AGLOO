@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "prettier.tabWidth": 4
+}
