@@ -2,6 +2,7 @@
 
 const ClubStorage = require("./ClubStorage");
 const UserStorage = require("./UserStorage");
+const Time = require("./Time");
 
 class Club {
     constructor(body) {
@@ -137,6 +138,36 @@ class Club {
             return response;
         } catch (err) {
             return { success: false, msg: "동아리 가입 조회 실패" };
+        }
+    }
+
+    async time() {
+        const client = this.body;
+        try {
+            const response = {
+                "a0": true, "b0": true, "c0": true, "d0": true, "e0": true, "f0": true, "g0": true,
+                "a1": true, "b1": true, "c1": true, "d1": true, "e1": true, "f1": true, "g1": true,
+                "a2": true, "b2": true, "c2": true, "d2": true, "e2": true, "f2": true, "g2": true,
+                "a3": true, "b3": true, "c3": true, "d3": true, "e3": true, "f3": true, "g3": true,
+                "a4": true, "b4": true, "c4": true, "d4": true, "e4": true, "f4": true, "g4": true
+            }
+
+            for (let i = 0; i < client.id.length; i++) {
+                const packet = await Time.get(client.id[i]);
+                if (!packet) {
+                    continue;
+                }
+                const info = JSON.parse(JSON.stringify(packet));
+                for (let key in info) {
+                    if (key == 'id') continue;
+                    if (info[key]) {
+                        response[key] = false;
+                    }
+                }
+            }
+            return response;
+        } catch (err) {
+            return { success: false, msg: "동아리 공강시간표 조회 실패" };
         }
     }
 }

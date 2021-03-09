@@ -3,16 +3,26 @@
 const express = require("express");
 const multer = require("multer");
 
-const Storage = multer.diskStorage({
+const club = multer.diskStorage({
     destination(req, file, callback) {
-        callback(null, "./src/public/upload");
+        callback(null, "./src/public/upload/club");
     },
     filename(req, file, callback) {
         callback(null, `${file.fieldname}_${Date.now()}_${file.originalname}`);
     },
 });
 
-const upload = multer({ storage: Storage });
+const post = multer.diskStorage({
+    destination(req, file, callback) {
+        callback(null, "./src/public/upload/post");
+    },
+    filename(req, file, callback) {
+        callback(null, `${file.fieldname}_${Date.now()}_${file.originalname}`);
+    },
+});
+
+const club_upload = multer({ storage: club });
+const post_upload = multer({ storage: post });
 const router = express.Router();
 
 const ctrl = require("./home.ctrl");
@@ -58,22 +68,16 @@ router.get("/club", ctrl.club.allClub);
 router.get("/myclub/:id", ctrl.club.myClub);
 router.get("/search", ctrl.club.search);
 
-router.post("/club", upload.single("img"), ctrl.club.create);
-router.patch("/club", upload.single("img"), ctrl.club.edit);
+router.post("/club", club_upload.single("img"), ctrl.club.create);
+router.patch("/club", club_upload.single("img"), ctrl.club.edit);
 router.delete("/club/:club_id", ctrl.club.delete);
-
-// router.post("/up", upload.single("img"), (req, res) => {
-//     console.log(req.file);
-//     console.log(req.file.filename);
-//     console.log("보내짐");
-//     res.status(200).json({
-//         message: "success!",
-//     });
-// });
 
 router.post("/creator", ctrl.club.creator);
 router.post("/join", ctrl.club.join);
 router.post("/unjoin", ctrl.club.unjoin);
 router.get("/isMember/:club_id/:id", ctrl.club.isMember);
+
+router.post("/clubtime", ctrl.club.time);
+
 
 module.exports = router;

@@ -179,7 +179,7 @@ const club = {
     create: async (req, res) => {
         console.log(req.file);
         if (req.file) {
-            req.body.img = '/upload/' + req.file.filename;
+            req.body.img = '/upload/club/' + req.file.filename;
         }
         else {
             req.body.img = '/upload/default.png';
@@ -191,13 +191,14 @@ const club = {
     },
 
     edit: async (req, res) => {
-        let array = req.file.originalname.split('.'); 
-        array[0] = array[0] + '_'; 
-        array[1] = '.' + array[1];
-        array.splice(1, 0, Date.now().toString());
-        const result = array.join('');
-        req.body.img = '/upload/' + result;
-        
+        console.log(req.file);
+        if (req.file) {
+            req.body.img = '/upload/club/' + req.file.filename;
+        }
+        else {
+            req.body.img = '/upload/default.png';
+        }
+        req.body = JSON.parse(JSON.stringify(req.body));
         const club = new Club(req.body);
         const response = await club.edit();
         return res.json(response);
@@ -232,6 +233,12 @@ const club = {
         req.body.id = req.params.id;
         const club = new Club(req.body);
         const response = await club.isMember();
+        return res.json(response);
+    },
+
+    time: async (req, res) => {
+        const club = new Club(req.body);
+        const response = await club.time();
         return res.json(response);
     },
 };
