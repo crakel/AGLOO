@@ -18,3 +18,29 @@ var inserts = ['users', 'id', userId];
 sql = mysql.format(sql, inserts);
 ```
 ?? 로 테이블, ?로 필드를 변수 매핑할 수 있다.
+
+
+## Multer 저장경로, 파일명 설정
+multer 모듈을 통해서 post로 전송된 파일의 저장경로와 파일명 등을 처리하기 위해서는 DiskStorage 엔진이 필요하다.
+참고 : <https://github.com/expressjs/multer#storage>
+```javascript
+var multer = require('multer'); // multer모듈 적용 (for 파일업로드)
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'uploads/') // cb 콜백함수를 통해 전송된 파일 저장 디렉토리 설정
+  }
+  filename: function (req, file, cb) {
+    cb(null, file.originalname) // cb 콜백함수를 통해 전송된 파일 이름 설정
+  }
+})
+var upload = multer({ storage: storage })
+```
+이후 미들웨어로
+```javascript
+upload.single("img")
+```
+ 혹은 여러개 일 경우
+ ```javascript
+upload.array("img', 3)
+``` 
+와 같은 식으로 적용해준다.
