@@ -25,7 +25,8 @@ var sql = "SELECT * FROM ?? WHERE ?? = ?";
 var inserts = ['users', 'id', userId];
 sql = mysql.format(sql, inserts);
 ```
-?? 로 테이블, ?로 필드를 변수 매핑할 수 있다.
+?? 로 테이블, ?로 필드를 변수 매핑할 수 있다.   
+참고 : <https://github.com/mysqljs/mysql>
 
 <br>
 
@@ -36,6 +37,7 @@ JSON.parse() // String 객체를 JSON 객체로 변환
 ```
 참고 : <https://stackoverflow.com/questions/31221980/how-to-access-a-rowdatapacket-object>
 
+<br>
 
 ## Multer 저장경로, 파일명 설정
 multer 모듈을 통해서 post로 전송된 파일의 저장경로와 파일명 등을 처리하기 위해서는 DiskStorage 엔진이 필요하다.   

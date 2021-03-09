@@ -1,7 +1,6 @@
 "use strict";
 
 const db = require("../config/db");
-const UserStorage = require("./UserStorage");
 
 class BoardStorage {
     static async getPostList(boardInfo) {
@@ -64,11 +63,25 @@ class BoardStorage {
         });
     }
 
-    static async getFreeFeed(club_id) {
-        return new Promise((resolve, reject) => {
-            const query =
-                "SELECT idx, club_id, id, writer, title, hit, DATE_FORMAT(created, '%Y/%m/%d %T') as created, DATE_FORMAT(updated, '%Y/%m/%d %T') as updated FROM free_board WHERE club_id =? ORDER BY idx DESC LIMIT 3;";
-            db.query(query, [boardInfo.club_id], (err, data) => {
+    static async getFeed(feedInfo) {
+        return new Promise(async (resolve, reject) => {
+            let myclub_query = "";
+            if (feedInfo.myclub.length == 0) {
+                resolve({success: false, msg: "가입된 동아리가 없습니다"});
+            }
+            for (let i = 0; i < feedInfo.myclub.length; i++) {
+                console.log(feedInfo.myclub[i].club_id);
+                myclub_query += "club_id = " + String(feedInfo.myclub[i].club_id);
+                if (i != feedInfo.myclub.length - 1) {
+                    myclub_query += " OR ";
+                }
+            }
+            // console.log(myclub_query);
+            let query =
+                "SELECT idx, club_id, id, writer, title, hit, DATE_FORMAT(created, '%Y/%m/%d %T') as created, DATE_FORMAT(updated, '%Y/%m/%d %T') as updated FROM ?? WHERE "
+                + myclub_query + " ORDER BY idx DESC LIMIT 3;";
+            
+            db.query(query, feedInfo.board, (err, data) => {
                 if (err) reject(`${err}`);
                 resolve(data);
             });

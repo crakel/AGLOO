@@ -41,7 +41,7 @@ router.post("/register", ctrl.process.register);
 router.post("/auth", auth.auth);
 
 // 개인 피드 API
-router.get("/feed/:id", ctrl.board.feed);
+router.get("/feed/:id/:board", ctrl.board.feed);
 
 // 시간표 API
 router.get("/time", ctrl.time.getTime);

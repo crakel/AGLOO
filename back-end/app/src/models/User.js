@@ -16,10 +16,11 @@ class User {
         console.log(client);
         
         try {
-            const { id, pw } = await UserStorage.getLoginInfo(client.id);
+            const { id, pw, name } = await UserStorage.getLoginInfo(client.id);
             
             const token = jwt.sign({
-                id: id
+                id: id,
+                name: name
             },
             process.env.SECRET, {
                 expiresIn: "60m"

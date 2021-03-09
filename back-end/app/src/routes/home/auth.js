@@ -10,6 +10,7 @@ const auth = (req, res, next) => {
         return res.json({
             success: true,
             id: decoded.id,
+            name: decoded.name
         });
     } catch (err) {
         return res.json({ success: false });

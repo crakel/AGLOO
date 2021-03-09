@@ -64,6 +64,7 @@ const time = {
 const board = {
     feed: async (req, res) => {
         req.body.id = req.params.id;
+        req.body.board = req.params.board;
         const board = new Board(req.body);
         const response = await board.feed();
         return res.json(response);

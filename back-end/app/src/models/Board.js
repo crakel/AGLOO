@@ -2,6 +2,7 @@
 
 const { response } = require("express");
 const BoardStorage = require("./BoardStorage");
+const ClubStorage = require("./ClubStorage");
 const CmntStorage = require("./CmntStorage");
 const UserStorage = require("./UserStorage");
 
@@ -107,6 +108,18 @@ class Board {
             return response;
         } catch (err) {
             return { success: false, msg: "댓글 삭제 실패" };
+        }
+    }
+
+    async feed() {
+        const client = this.body;
+        try {
+            const myclub = await ClubStorage.getMyClub(client.id);
+            client.myclub = myclub;
+            const response = await BoardStorage.getFeed(client);
+            return response;
+        } catch (err) {
+            return { success: false, msg: "피드 조회 실패" };
         }
     }
 }

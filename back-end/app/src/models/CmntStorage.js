@@ -1,7 +1,6 @@
 "use strict";
 
 const db = require("../config/db");
-const UserStorage = require("./UserStorage");
 
 class CmntStorage {
     static async getCmnt(postInfo) {

@@ -6,7 +6,7 @@ const bcryptjs = require("bcryptjs");
 class UserStorage {
     static async getLoginInfo(id) {
         return new Promise((resolve, reject) => {
-            const query = "SELECT id, pw FROM users WHERE id = ?;";
+            const query = "SELECT id, pw, name FROM users WHERE id = ?;";
             db.query(query, id, (err, data) => {
                 if (err) reject(`${err}`);
                 resolve(data[0]);
