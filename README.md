@@ -54,7 +54,7 @@
   (개인 시간표 등록)  
   
   * **Show all sorted clubs in the field of interest**  
-  (분과마다 나누어진 동아리 리스트)
+  (분과로 정렬된 동아리 리스트)
   
   * **Apply for clubs**  
   (동아리 가입신청)
@@ -68,10 +68,10 @@
   * **Add any contents in the notice board only by executives**  
   (동아리 임원진들만의 공지사항 작성)
   
-  * **Add any contents in the boards by club memebers**  
+  * **Add any contents and comments in the boards by club memebers **  
   (동아리원들의 게시판 작성 및 댓글 )
   
-  * **sign out** 
+  * **sign out**  
   (로그아웃)
     
 ## ❄️ How to process 
