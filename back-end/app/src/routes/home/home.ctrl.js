@@ -91,6 +91,12 @@ const board = {
     writePost: async (req, res) => {
         req.body.club_id = req.params.club_id;
         req.body.board = req.params.board;
+        if (req.file) {
+            req.body.img = '/upload/board/' + req.file.filename;
+        }
+        else {
+            req.body.img = '';
+        }
         const board = new Board(req.body);
         const response = await board.writePost();
         return res.json(response);

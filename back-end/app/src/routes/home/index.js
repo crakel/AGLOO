@@ -52,8 +52,8 @@ router.delete("/time", ctrl.time.deleteTime);
 // 게시판 API
 router.get("/list/:club_id/:board", ctrl.board.getBoard);
 router.get("/post/:board/:idx", ctrl.board.readPost);
-router.post("/post/:club_id/:board", ctrl.board.writePost);
-router.patch("/post/:board/:idx", ctrl.board.editPost);
+router.post("/post/:club_id/:board", post_upload.single("img"), ctrl.board.writePost);
+router.patch("/post/:board/:idx", post_upload.single("img"), ctrl.board.editPost);
 router.delete("/post/:board/:idx", ctrl.board.delPost);
 
 router.get("/cmnt/:board/:idx", ctrl.board.readCmnt);

@@ -33,8 +33,8 @@ class BoardStorage {
     static async insertPost(postInfo) {
         return new Promise((resolve, reject) => {
             const query =
-                "INSERT INTO ?? (title, club_id, id, writer, content) VALUES (?, ?, ?, ?, ?);";
-            db.query(query, [postInfo.board, postInfo.title, postInfo.club_id, postInfo.id, postInfo.writer, postInfo.content], (err) => {
+                "INSERT INTO ?? (title, club_id, id, writer, content, img) VALUES (?, ?, ?, ?, ?, ?);";
+            db.query(query, [postInfo.board, postInfo.title, postInfo.club_id, postInfo.id, postInfo.writer, postInfo.content, postInfo.img], (err) => {
                 if (err) reject(`${err}`);
                 resolve({ success: true });
             });
@@ -44,8 +44,8 @@ class BoardStorage {
     static async updatePost(postInfo) {
         return new Promise((resolve, reject) => {
             const query =
-                "UPDATE ?? SET title=?, content=? WHERE idx =?;";
-            db.query(query, [postInfo.board, postInfo.title, postInfo.content, postInfo.idx], (err) => {
+                "UPDATE ?? SET title=?, content=?, img=? WHERE idx =?;";
+            db.query(query, [postInfo.board, postInfo.title, postInfo.content, postInfo.img, postInfo.idx], (err) => {
                 if (err) reject(`${err}`);
                 resolve({ success: true });
             });
