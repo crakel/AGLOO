@@ -7,7 +7,6 @@ const Club = require("../../models/Club");
 
 const output = {
     home: (req, res) => {
-        // 렌더링 기능
         res.render("./home/index");
     },
 

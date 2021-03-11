@@ -1,8 +1,8 @@
-# AGLOO / Back-End
+![스몰아글루](https://user-images.githubusercontent.com/59333136/110794252-e4d9bb80-82b8-11eb-95f1-411799ea5d70.png)
+# AGLOO / Back-End (2021.01 ~ 2021.03)
 
-## 개발 및 공부 과정
+Node.js 기반 API Server
 
-Node.js 기반 API Server    
 DB : MySQL
 
 초기 개발 단계에서 테스트용으로 웹 views 연동   
@@ -18,6 +18,8 @@ DB : MySQL
   - multer
 
 <br>
+
+# 개발 및 공부 과정
 
 ## MySQL 쿼리 변수담기
 ```javascript

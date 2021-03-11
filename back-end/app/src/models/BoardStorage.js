@@ -70,7 +70,6 @@ class BoardStorage {
                 resolve({success: false, msg: "가입된 동아리가 없습니다"});
             }
             for (let i = 0; i < feedInfo.myclub.length; i++) {
-                console.log(feedInfo.myclub[i].club_id);
                 myclub_query += "club_id = " + String(feedInfo.myclub[i].club_id);
                 if (i != feedInfo.myclub.length - 1) {
                     myclub_query += " OR ";
