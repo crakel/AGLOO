@@ -10,7 +10,7 @@
 ## ❄️ Member
 **전소미 팀**
 > '전'자공학과+'소'프트웨어학과+'미'디어학과
-> 아주대학교 전자공학과, 소프트웨어학과, 미디어학과에 재학 중인 학우분들 모여 
+> 에 재학 중인 학우분들이 모여 다같이 팀프로젝트를 진행했습니다.
 * 김기윤 (팀장, 기획, BACK-END)  
 [contact](https://github.com/ccrakel)
 * 김나현 (DATABASE)  
@@ -27,21 +27,23 @@
         - 로그인, 인증, 동아리, 게시판, 시간표 등의 데이터를 처리해서    front-end로 API를 공급하는 Server   
         (in NAVER CLOUD PLATFORM)
   * MySQL  
+  
+        - 사용자, 동아리, 시간표, 게시판, 댓글 관련 데이터를 각각의 field에 저장하고 새로운 데이터를 한다.
 ## ❄️ Directory Description
   * /front-end
   * /back-end
 
         - NCP 서버에서 데몬 프로세스로 있는 node.js 코드
         - 일부 변수는 dotenv를 통해 환경변수로 등록되있음
-
+  * /database 
         
 ## ❄️ ERD design
 -수정 중~
-## ❄️ Developmnet result
+## ❄️ Development result
   * **Sign in & Sign up**  
   <img src="https://user-images.githubusercontent.com/77534983/110496386-c482f300-8138-11eb-97a7-48c1c0875698.gif" width="300" height="500" />  
   
-  * **Show the latest news clubs you have joined and information of the club**
+  * **Show the latest news, clubs you have joined and information of the club**
   <img src="https://user-images.githubusercontent.com/77534983/110771603-07121000-829e-11eb-99a6-128c7f0d0034.gif" width="300" height="500" />  
   
   * **Set personal timetable**  
@@ -62,6 +64,9 @@
     
 ## ❄️ How to process 
 * Running front-end
+* ```bash
+
+```
 * Running back-end
 ``` bash
 # go to directory
