@@ -9,13 +9,13 @@
 ## ❄️ Member
 **전소미 팀**
 > '전'자공학과+'소'프트웨어학과+'미'디어학과  
-> 아주대학교 정보통신대학에 재학 중인 학우분들이 모여 다같이 팀 프로젝트를 진행했습니다.
+> -아주대학교 정보통신대학에 재학 중인 학우분들이 모여 다같이 팀 프로젝트를 진행했습니다.
 * 김기윤 (팀장, 기획, BACK-END)  
 [visit github](https://github.com/ccrakel)
 * 김나현 (DATABASE)  
 [visit github](https://github.com/6twinsniwt9)
 * 류지호 (APP FRONT-END)  
-[contact](https://github.com/ryuzho)
+[visit github](https://github.com/ryuzho)
 * 이상훈 (APP FRONT-END)  
 [visit github](https://github.com/FriedEggChicken)
 
@@ -27,7 +27,7 @@
         (in NAVER CLOUD PLATFORM)
   * MySQL  
   
-        - 사용자, 동아리, 시간표, 게시판, 댓글 관련 데이터를 각각의 field에 저장하고 새로운 데이터를 생성한다.
+        - 사용자, 동아리, 시간표, 게시판, 댓글 관련 데이터를 각각의 field에 저장하고 새로운 데이터를 생성다.
         - 데이터의 무결성을 유지하기에 적합하고 중복된 데이터처리를 최소화할 수 있다.
 ## ❄️ Directory Description
   * /front-end
@@ -69,7 +69,7 @@
   (동아리 임원진들만의 공지사항 작성)
   
   * **Add any contents in the boards by club memebers**  
-  (동아리원들의 게시판 작성)
+  (동아리원들의 게시판 작성 및 댓글 )
   
   * **sign out** 
   (로그아웃)
