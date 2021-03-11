@@ -12,6 +12,16 @@ class ClubStorage {
             });
         });
     }
+    
+    static async getClubName(club_id) {
+        return new Promise((resolve, reject) => {
+            const query = "SELECT club_name FROM club WHERE club_id=?;";
+            db.query(query, club_id, (err, data) => {
+                if (err) reject(`${err}`);
+                resolve(data[0]);
+            });
+        });
+    }
 
     static async getClubImg(club_id) {
         return new Promise((resolve, reject) => {

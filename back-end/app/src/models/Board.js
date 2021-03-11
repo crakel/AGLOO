@@ -117,6 +117,10 @@ class Board {
             const myclub = await ClubStorage.getMyClub(client.id);
             client.myclub = myclub;
             const response = await BoardStorage.getFeed(client);
+            for (let i = 0; i < response.length; i++) {
+                const club_name = await ClubStorage.getClubName(response[i].club_id);
+                response[i].club_name = club_name.club_name;
+            }
             return response;
         } catch (err) {
             return { success: false, msg: "피드 조회 실패" };
