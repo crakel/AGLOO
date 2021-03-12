@@ -45,11 +45,11 @@
 ## ❄️ Development result
   * **Sign in & Sign up**  
   (회원 가입 및 로그인)  
-  <img src="https://user-images.githubusercontent.com/77534983/110496386-c482f300-8138-11eb-97a7-48c1c0875698.gif" width="300" height="600" />
+    <img src="https://user-images.githubusercontent.com/77534983/110496386-c482f300-8138-11eb-97a7-48c1c0875698.gif" width="300" height="600" />
   
   * **Show the clubs you have joined and information of the clubs**  
   (가입한 동아리가 나오는 홈화면 및 동아리 선택시 소개글 업로드)  
-  <img src="https://user-images.githubusercontent.com/77534983/110771603-07121000-829e-11eb-99a6-128c7f0d0034.gif" width="300" height="600" />
+    <img src="https://user-images.githubusercontent.com/77534983/110771603-07121000-829e-11eb-99a6-128c7f0d0034.gif" width="300" height="600" />
   
   * **Set personal timetable and modify the timetable**  
   (개인 시간표 등록 및 수정)  
@@ -79,7 +79,7 @@
   (동아리원들의 게시판 작성 및 댓글)  
   <img src="https://user-images.githubusercontent.com/77597604/110982014-5a25b900-83ab-11eb-87e5-ea54be2ade60.gif" width="300" height="600" />
   
-  * **provide a differentiated access to club memebers and non-club members for board**
+  * **provide a differentiated access to club memebers and non-club members for board**  
   (동아리 회원이 아니면 활동게시판만 접근 가능)  
   <img src="https://user-images.githubusercontent.com/77597604/110989272-fdc79700-83b4-11eb-918a-4b4542d6c2ff.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77597604/110989486-55fe9900-83b5-11eb-8b5f-63b81f85d700.gif" width="300" height="600" />
   
