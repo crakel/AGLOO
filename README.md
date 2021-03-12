@@ -55,15 +55,15 @@
   (분과별 동아리 리스트와 동아리 찾기)  
   <img src="https://user-images.githubusercontent.com/77534983/110780653-447b9b00-82a8-11eb-840d-ec6a883d17b2.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110781331-206c8980-82a9-11eb-845a-f1d9689924ea.gif" width="300" height="600" />
   
-   * **Register new clubs**  
+   * **Create new clubs**  
   (동아리 생성)  
   <img src="https://user-images.githubusercontent.com/77534983/110781887-c7e9bc00-82a9-11eb-88f7-a0cb007f7cd1.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110782158-23b44500-82aa-11eb-9313-9a74732e9347.gif" width="300" height="600" />
   
-  * **Apply for the club and quit the club**  
+  * **Apply for the club and quit it**  
   (동아리 가입 및 탈퇴)  
   <img src="https://user-images.githubusercontent.com/77534983/110783368-b43f5500-82ab-11eb-8e33-63180df9fd18.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110783474-d76a0480-82ab-11eb-837e-1d7d4d0acec0.gif" width="300" height="600" />
   
-  * **Set personal timetable and modify the timetable**  
+  * **Set personal timetable and modify it**  
   (개인 시간표 등록 및 수정)  
   <img src="https://user-images.githubusercontent.com/77534983/110782749-df757480-82aa-11eb-91e4-3af66a74a5b5.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110782848-f916bc00-82aa-11eb-83ad-bb1ad1c819ea.gif" width="300" height="600" />
   
@@ -79,7 +79,7 @@
   (동아리원들의 공지사항 게시판을 제외한 모든 게시판 및 댓글 접근 권한)  
     <img src="https://user-images.githubusercontent.com/77597604/110982014-5a25b900-83ab-11eb-87e5-ea54be2ade60.gif" width="300" height="600" />
   
-  * **provide a differentiated access to club memebers and non-club members for board**  
+  * **Provide a differentiated access to club memebers and non-club members for board**  
   (비동아리 회원의 한정적인 접근 권한 범위: 활동 게시판)  
   <img src="https://user-images.githubusercontent.com/77597604/110989272-fdc79700-83b4-11eb-918a-4b4542d6c2ff.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77597604/110989486-55fe9900-83b5-11eb-8b5f-63b81f85d700.gif" width="300" height="600" />
   
