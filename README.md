@@ -37,6 +37,7 @@
         - 일부 변수는 dotenv를 통해 환경변수로 등록되있음
 
   * /database 
+  
         - putty로 할당받은 서버에 SSH 접속
         - Mysql 버전: 5.7.33-0ubuntu0.18.04.1
 ## ❄️ ERD design
@@ -61,8 +62,7 @@
   
   * **Register new clubs**  
   (동아리 생성)
-  <img src="https://user-images.githubusercontent.com/77534983/110781887-c7e9bc00-82a9-11eb-88f7-a0cb007f7cd1.gif" width="300" height="600" />
-______<img src="https://user-images.githubusercontent.com/77534983/110782158-23b44500-82aa-11eb-9313-9a74732e9347.gif" width="300" height="600" />
+  <img src="https://user-images.githubusercontent.com/77534983/110781887-c7e9bc00-82a9-11eb-88f7-a0cb007f7cd1.gif" width="300" height="600" />____<img src="https://user-images.githubusercontent.com/77534983/110782158-23b44500-82aa-11eb-9313-9a74732e9347.gif" width="300" height="600" />
 
   * **Show vacant time between chosen members in the club**  
   (동아리 내에서 선택한 동아리원끼리의 겹치는 공강시간 계산)
@@ -105,7 +105,7 @@ $ exit
 ## ❄️ I felt that...
 
 ## 🌈Contact
--김기윤: crakeldev@gmail.com
+-김기윤: crakeldev@gmail.com   
 -김나현: glowring1@gmail.com  
 -류지호: 이메일 작성해주세요~  
 -이상훈: 이메일 작성해주세요~  
