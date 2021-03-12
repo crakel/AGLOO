@@ -56,6 +56,10 @@
   (가입한 동아리와 최신 게시물이 나오는 홈화면 및 동아리 선택시 소개글 업로드)  
   <img src="https://user-images.githubusercontent.com/77534983/110771603-07121000-829e-11eb-99a6-128c7f0d0034.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77597604/110978281-83901600-83a6-11eb-8081-ce7634096df5.gif" width="300" height="600" />
   
+   * **:zap::zap:[main]:zap::zap: Show vacant time between chosen members in the club**  
+  ***([핵심] 동아리 내에서 선택한 동아리원끼리의 겹치는 공강 시간 계산)***  
+    <img src="https://user-images.githubusercontent.com/77534983/110784180-b6ee7a00-82ac-11eb-8142-d77eaa9165a8.gif" width="300" height="600" />
+  
   * **Use notice board only by executives**  
   (동아리 임원진들만의 공지사항 게시판 접근 권한)  
     <img src="https://user-images.githubusercontent.com/77597604/110980929-bc7dba00-83a9-11eb-8259-7d68e272413e.gif" width="300" height="600" />
@@ -94,10 +98,6 @@
   * **Set personal timetable and modify it**  
   (개인 시간표 등록 및 수정)  
   <img src="https://user-images.githubusercontent.com/77534983/110782749-df757480-82aa-11eb-91e4-3af66a74a5b5.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110782848-f916bc00-82aa-11eb-83ad-bb1ad1c819ea.gif" width="300" height="600" />
-  
-  * **:zap::zap:[main]:zap::zap: Show vacant time between chosen members in the club**  
-  ***([핵심] 동아리 내에서 선택한 동아리원끼리의 겹치는 공강 시간 계산)***  
-    <img src="https://user-images.githubusercontent.com/77534983/110784180-b6ee7a00-82ac-11eb-8142-d77eaa9165a8.gif" width="300" height="600" />
   ------
   ### 🔘 Settings
   * **sign out**  
