@@ -21,6 +21,9 @@
 
 ## ❄️ Technology used
   * React-native
+  * Android Studio
+  * Expo
+  * Javascript
   * Node.js + Express.js
 
         - 로그인, 인증, 동아리, 게시판, 시간표 등의 데이터를 처리해서 front-end로 API를 공급하는 Server   
@@ -87,7 +90,7 @@
   (게시판에 이미지 첨부 가능)  
     <img src="https://user-images.githubusercontent.com/77597604/110989068-b2ad8400-83b4-11eb-8453-ebf8ede50cf9.gif" width="300" height="600" />
     
-  * **All contents and comments of boards can be controlled by executives**
+  * **All contents and comments of boards can be controlled by executives**  
   (임원진은 모든 게시판과 댓글 수정 및 삭제 가능)  
   <img src="https://user-images.githubusercontent.com/77597604/110988296-b391e600-83b3-11eb-87a2-7719bdac57e8.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77597604/110988340-c3a9c580-83b3-11eb-8e19-cc9eba699440.gif" width="300" height="600" />
     
