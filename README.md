@@ -59,14 +59,14 @@
   (분과별 동아리 리스트와 동아리 찾기)  
   <img src="https://user-images.githubusercontent.com/77534983/110780653-447b9b00-82a8-11eb-840d-ec6a883d17b2.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110781331-206c8980-82a9-11eb-845a-f1d9689924ea.gif" width="300" height="600" />
   
+   * **Register new clubs**  
+  (동아리 생성)  
+  <img src="https://user-images.githubusercontent.com/77534983/110781887-c7e9bc00-82a9-11eb-88f7-a0cb007f7cd1.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110782158-23b44500-82aa-11eb-9313-9a74732e9347.gif" width="300" height="600" />
+  
   * **Apply for the club and quit the club**  
   (동아리 가입 및 탈퇴)  
   <img src="https://user-images.githubusercontent.com/77534983/110783368-b43f5500-82ab-11eb-8e33-63180df9fd18.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110783474-d76a0480-82ab-11eb-837e-1d7d4d0acec0.gif" width="300" height="600" />
   
-  * **Register new clubs**  
-  (동아리 생성)  
-  <img src="https://user-images.githubusercontent.com/77534983/110781887-c7e9bc00-82a9-11eb-88f7-a0cb007f7cd1.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110782158-23b44500-82aa-11eb-9313-9a74732e9347.gif" width="300" height="600" />
-
   * **:zap:Show vacant time between chosen members in the club**  
   (동아리 내에서 선택한 동아리원끼리의 겹치는 공강시간 계산)  
   <img src="https://user-images.githubusercontent.com/77534983/110784180-b6ee7a00-82ac-11eb-8142-d77eaa9165a8.gif" width="300" height="600" />
