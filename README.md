@@ -53,19 +53,19 @@
   
   * **Set personal timetable**  
   (개인 시간표 등록)  
-  <img src="https://user-images.githubusercontent.com/77534983/110782749-df757480-82aa-11eb-91e4-3af66a74a5b5.gif" width="300" height="600" /> <img src="https://user-images.githubusercontent.com/77534983/110782848-f916bc00-82aa-11eb-83ad-bb1ad1c819ea.gif" width="300" height="600" />
+  <img src="https://user-images.githubusercontent.com/77534983/110782749-df757480-82aa-11eb-91e4-3af66a74a5b5.gif" width="300" height="600" />   <img src="https://user-images.githubusercontent.com/77534983/110782848-f916bc00-82aa-11eb-83ad-bb1ad1c819ea.gif" width="300" height="600" />
   
   * **Show all sorted clubs in the field of interest**  
   (분과로 정렬된 동아리 리스트)  
-  <img src="https://user-images.githubusercontent.com/77534983/110780653-447b9b00-82a8-11eb-840d-ec6a883d17b2.gif" width="300" height="600" /> <img src="https://user-images.githubusercontent.com/77534983/110781331-206c8980-82a9-11eb-845a-f1d9689924ea.gif" width="300" height="600" />
+  <img src="https://user-images.githubusercontent.com/77534983/110780653-447b9b00-82a8-11eb-840d-ec6a883d17b2.gif" width="300" height="600" />   <img src="https://user-images.githubusercontent.com/77534983/110781331-206c8980-82a9-11eb-845a-f1d9689924ea.gif" width="300" height="600" />
   
   * **Apply for clubs**  
   (동아리 가입신청)  
-  <img src="https://user-images.githubusercontent.com/77534983/110783368-b43f5500-82ab-11eb-8e33-63180df9fd18.gif" width="300" height="600" /> <img src="https://user-images.githubusercontent.com/77534983/110783474-d76a0480-82ab-11eb-837e-1d7d4d0acec0.gif" width="300" height="600" />
+  <img src="https://user-images.githubusercontent.com/77534983/110783368-b43f5500-82ab-11eb-8e33-63180df9fd18.gif" width="300" height="600" />   <img src="https://user-images.githubusercontent.com/77534983/110783474-d76a0480-82ab-11eb-837e-1d7d4d0acec0.gif" width="300" height="600" />
   
   * **Register new clubs**  
   (동아리 생성)  
- <img src="https://user-images.githubusercontent.com/77534983/110781887-c7e9bc00-82a9-11eb-88f7-a0cb007f7cd1.gif" width="300" height="600" /> <img src="https://user-images.githubusercontent.com/77534983/110782158-23b44500-82aa-11eb-9313-9a74732e9347.gif" width="300" height="600" />
+ <img src="https://user-images.githubusercontent.com/77534983/110781887-c7e9bc00-82a9-11eb-88f7-a0cb007f7cd1.gif" width="300" height="600" />   <img src="https://user-images.githubusercontent.com/77534983/110782158-23b44500-82aa-11eb-9313-9a74732e9347.gif" width="300" height="600" />
 
   * **Show vacant time between chosen members in the club**  
   (동아리 내에서 선택한 동아리원끼리의 겹치는 공강시간 계산)  
@@ -74,7 +74,7 @@
   * **Add any contents in the notice board only by executives**  
   (동아리 임원진들만의 공지사항 작성)  
   
-  * **Add any contents and comments in the boards by club memebers **  
+  * **Add any contents and comments in the boards by club memebers**  
   (동아리원들의 게시판 작성 및 댓글)  
   
   * **sign out**  
