@@ -47,9 +47,9 @@
   (회원 가입 및 로그인)  
     <img src="https://user-images.githubusercontent.com/77534983/110496386-c482f300-8138-11eb-97a7-48c1c0875698.gif" width="300" height="600" />
   
-  * **Show the clubs you have joined and information of the clubs**  
-  (가입한 동아리가 나오는 홈화면 및 동아리 선택시 소개글 업로드)  
-    <img src="https://user-images.githubusercontent.com/77534983/110771603-07121000-829e-11eb-99a6-128c7f0d0034.gif" width="300" height="600" />
+  * **Home screen: Show the latest news, the clubs you have joined and information of the clubs**  
+  (홈화면: 가입한 동아리와 최신 게시물이 나오는 홈화면 및 동아리 선택시 소개글 업로드)  
+  <img src="https://user-images.githubusercontent.com/77534983/110771603-07121000-829e-11eb-99a6-128c7f0d0034.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77597604/110978281-83901600-83a6-11eb-8081-ce7634096df5.gif" width="300" height="600" />
   
   * **Set personal timetable and modify the timetable**  
   (개인 시간표 등록 및 수정)  
@@ -67,22 +67,30 @@
   (동아리 가입 및 탈퇴)  
   <img src="https://user-images.githubusercontent.com/77534983/110783368-b43f5500-82ab-11eb-8e33-63180df9fd18.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110783474-d76a0480-82ab-11eb-837e-1d7d4d0acec0.gif" width="300" height="600" />
   
-  * **:zap:Show vacant time between chosen members in the club**  
-  (동아리 내에서 선택한 동아리원끼리의 겹치는 공강시간 계산)  
-  <img src="https://user-images.githubusercontent.com/77534983/110784180-b6ee7a00-82ac-11eb-8142-d77eaa9165a8.gif" width="300" height="600" />
+  * **:zap::zap:Show vacant time between chosen members in the club**  
+  (동아리 내에서 선택한 동아리원끼리의 겹치는 공강 시간 계산)  
+    <img src="https://user-images.githubusercontent.com/77534983/110784180-b6ee7a00-82ac-11eb-8142-d77eaa9165a8.gif" width="300" height="600" />
   
-  * **Using notice board only by executives**  
-  (동아리 임원진들만의 공지사항 게시판 사용 가능)  
-  <img src="https://user-images.githubusercontent.com/77597604/110980929-bc7dba00-83a9-11eb-8259-7d68e272413e.gif" width="300" height="600" />
+  * **Use notice board only by executives**  
+  (동아리 임원진들만의 공지사항 게시판 접근 권한)  
+    <img src="https://user-images.githubusercontent.com/77597604/110980929-bc7dba00-83a9-11eb-8259-7d68e272413e.gif" width="300" height="600" />
   
   * **Add any contents and comments in the boards by club memebers**  
-  (동아리원들의 게시판 작성 및 댓글)  
-  <img src="https://user-images.githubusercontent.com/77597604/110982014-5a25b900-83ab-11eb-87e5-ea54be2ade60.gif" width="300" height="600" />
+  (동아리원들의 공지사항 게시판을 제외한 모든 게시판 및 댓글 접근 권한)  
+    <img src="https://user-images.githubusercontent.com/77597604/110982014-5a25b900-83ab-11eb-87e5-ea54be2ade60.gif" width="300" height="600" />
   
   * **provide a differentiated access to club memebers and non-club members for board**  
-  (동아리 회원이 아니면 활동게시판만 접근 가능)  
+  (비동아리 회원의 한정적인 접근 권한 범위: 활동 게시판)  
   <img src="https://user-images.githubusercontent.com/77597604/110989272-fdc79700-83b4-11eb-918a-4b4542d6c2ff.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77597604/110989486-55fe9900-83b5-11eb-8b5f-63b81f85d700.gif" width="300" height="600" />
   
+  * **Add image at boards**  
+  (게시판에 이미지 첨부 가능)  
+    <img src="https://user-images.githubusercontent.com/77597604/110989068-b2ad8400-83b4-11eb-8453-ebf8ede50cf9.gif" width="300" height="600" />
+    
+  * **All contents and comments of boards can be controlled by executives**
+  (임원진은 모든 게시판과 댓글 수정 및 삭제 가능)  
+  <img src="https://user-images.githubusercontent.com/77597604/110988296-b391e600-83b3-11eb-87a2-7719bdac57e8.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77597604/110988340-c3a9c580-83b3-11eb-8e19-cc9eba699440.gif" width="300" height="600" />
+    
   * **sign out**  
   (로그아웃)
     
