@@ -71,7 +71,7 @@
   <img src="https://user-images.githubusercontent.com/77534983/110782749-df757480-82aa-11eb-91e4-3af66a74a5b5.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110782848-f916bc00-82aa-11eb-83ad-bb1ad1c819ea.gif" width="300" height="600" />
   
   * **:zap::zap:[main]:zap::zap: Show vacant time between chosen members in the club**  
-  ([핵심:heavy_exclamation_mark:] 동아리 내에서 선택한 동아리원끼리의 겹치는 공강 시간 계산)  
+  ***([핵심] 동아리 내에서 선택한 동아리원끼리의 겹치는 공강 시간 계산)***  
     <img src="https://user-images.githubusercontent.com/77534983/110784180-b6ee7a00-82ac-11eb-8142-d77eaa9165a8.gif" width="300" height="600" />
   
   * **Use notice board only by executives**  
