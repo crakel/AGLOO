@@ -14,7 +14,7 @@ const club = multer.diskStorage({
 
 const post = multer.diskStorage({
     destination(req, file, callback) {
-        callback(null, "./src/public/upload/post");
+        callback(null, "./src/public/upload/board");
     },
     filename(req, file, callback) {
         callback(null, `${file.fieldname}_${Date.now()}_${file.originalname}`);

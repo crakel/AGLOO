@@ -5,7 +5,7 @@
 > 동아리원끼리는 서로 등록해놓은 시간표를 확인하고 겹치는 공강 시간은 언제인지 계산해주는 기능과  
 > 동아리 임원은 동아리에 대한 정보를 기입하고 활동내역들을 올릴 수 있고 이를 바탕으로 외부에서도 공개된 정보를 보고 동아리 홍보 또한 가능한 서비스를 가진 통합적인 플랫폼
 ## ❄️ Period
-2021.01~2021.03
+2021.01 ~ 2021.03
 ## ❄️ Members
 **전소미 팀**
 > '전'자공학과+'소'프트웨어학과+'미'디어학과  
@@ -23,32 +23,32 @@
   * React-native
   * Node.js + Express.js
 
-        - 로그인, 인증, 동아리, 게시판, 시간표 등의 데이터를 처리해서    front-end로 API를 공급하는 Server   
+        - 로그인, 인증, 동아리, 게시판, 시간표 등의 데이터를 처리해서 front-end로 API를 공급하는 Server   
         (in NAVER CLOUD PLATFORM)
   * MySQL  
   
-        - 사용자, 동아리, 시간표, 게시판, 댓글 관련 데이터를 각각의 field에 알맞게 저장하고 새로운 데이터를 생성다.
+        - 사용자, 동아리, 시간표, 게시판, 댓글 관련 데이터를 각각의 field에 알맞게 저장하고 새로운 데이터를 생성한다.
         - 데이터의 무결성을 유지하기에 적합하고 중복된 데이터처리를 최소화할 수 있다.
 ## ❄️ Directory Description
-  * /front-end
+  * /app-front
   * /back-end
 
         - NCP 서버에서 데몬 프로세스로 있는 node.js 코드
         - 일부 변수는 dotenv를 통해 환경변수로 등록되있음
+
   * /database 
-        
-        -putty로 할당받은 서버에 SSH 접속
-        -Mysql 버전: 5.7.33-0ubuntu0.18.04.1
+        - putty로 할당받은 서버에 SSH 접속
+        - Mysql 버전: 5.7.33-0ubuntu0.18.04.1
 ## ❄️ ERD design
 -수정 중~
 ## ❄️ Development result
   * **Sign in & Sign up**  
   (회원 가입 및 로그인) 
-  <img src="https://user-images.githubusercontent.com/77534983/110496386-c482f300-8138-11eb-97a7-48c1c0875698.gif" width="300" height="500" />  
+  <img src="https://user-images.githubusercontent.com/77534983/110496386-c482f300-8138-11eb-97a7-48c1c0875698.gif" width="300" height="600" />  
   
   * **Show the latest news, clubs you have joined and information of the club**  
   (최신 게시물과 가입된 동아리가 나오는 홈화면 및 동아리 소개글)
-  <img src="https://user-images.githubusercontent.com/77534983/110771603-07121000-829e-11eb-99a6-128c7f0d0034.gif" width="300" height="500" />  
+  <img src="https://user-images.githubusercontent.com/77534983/110771603-07121000-829e-11eb-99a6-128c7f0d0034.gif" width="300" height="600" />  
   
   * **Set personal timetable**  
   (개인 시간표 등록)  
@@ -61,7 +61,9 @@
   
   * **Register new clubs**  
   (동아리 생성)
-  
+  <img src="https://user-images.githubusercontent.com/77534983/110781887-c7e9bc00-82a9-11eb-88f7-a0cb007f7cd1.gif" width="300" height="600" />
+______<img src="https://user-images.githubusercontent.com/77534983/110782158-23b44500-82aa-11eb-9313-9a74732e9347.gif" width="300" height="600" />
+
   * **Show vacant time between chosen members in the club**  
   (동아리 내에서 선택한 동아리원끼리의 겹치는 공강시간 계산)
   
@@ -103,7 +105,7 @@ $ exit
 ## ❄️ I felt that...
 
 ## 🌈Contact
--김기윤: 이메일 작성해주세요~  
+-김기윤: crakeldev@gmail.com
 -김나현: glowring1@gmail.com  
 -류지호: 이메일 작성해주세요~  
 -이상훈: 이메일 작성해주세요~  

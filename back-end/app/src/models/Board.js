@@ -35,6 +35,7 @@ class Board {
     async writePost() {
         const client = this.body;
         try {
+            console.log(client);
             const info = await UserStorage.getUserInfo(client.id);
             const writer = info.name; 
             client.writer = writer;
