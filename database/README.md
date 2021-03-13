@@ -189,7 +189,10 @@ REFERENCES 테이블이름 (필드이름) ON UPDATE CASCADE ON DELETE CASCADE
     때문에 습관적으로 LEFT JOIN보다는 query의 성능을 위해서 INNER JOIN을 사용하는 것이 좋다. 
  [참고](https://jaenjoy.tistory.com/7)
          
- * 서브 쿼리 vs JOIN
+ * 서브 쿼리 vs JOIN  
+ MySQL 5.5까지는 서브쿼리 최적화가 대부분이 되어있지 않으므로 웬만하면 Join으로 전환하도록 하자. (메인테이블의 row수 만큼 서브 쿼리르 수행한다.)  
+ MySQL 5.6에서 서브 쿼리가 대폭 최적화 되긴 했다. (하지만 최적화가 적용 안되는 조건들이 다수 존재한다.)  
+ 따라서 버전과 조건에 관계 없이 좋은 성능을 내려면 최대한 JOIN을 사용하도록 한다.  
  
 ## 자주 쓰이는 SQL문 정리
 * 컬럼 관련
