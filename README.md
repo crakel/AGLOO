@@ -44,7 +44,7 @@
 
   * /database 
   
-        - 
+        - trigger 와 
 ## ❄️ ERD design
 ![image](https://user-images.githubusercontent.com/77525358/111033115-f6ef6180-8452-11eb-89f1-1c1a8bc3adbb.png)  
 
