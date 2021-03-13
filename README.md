@@ -47,7 +47,8 @@
         - putty로 할당받은 서버에 SSH 접속
         - Mysql 버전: 5.7.33-0ubuntu0.18.04.1
 ## ❄️ ERD design
--수정 중~
+![image](https://user-images.githubusercontent.com/77525358/111033115-f6ef6180-8452-11eb-89f1-1c1a8bc3adbb.png)  
+
 ## ❄️ Development result
 ### [Access]
   * **Sign in & Sign up**  
