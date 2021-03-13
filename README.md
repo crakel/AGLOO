@@ -23,13 +23,6 @@
   * React-native
 
         - ios, 안드로이드에서 동시개발 가능한 javascript 기반 모바일 애플리케이션 프레임워크
-  * Android Studio
-
-        - Android Virtual Device(AVD)를 통해 android 기기 테스트
-  * Expo
-
-        - Expo 어플을 통해 react-native로 구현한 app을 내 기기에서 직접 실행 가능
-  * Javascript
   * Node.js + Express.js
 
         - 로그인, 인증, 동아리, 게시판, 시간표 등의 데이터를 처리해서 front-end로 API를 공급하는 Server   
