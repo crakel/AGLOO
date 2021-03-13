@@ -9,7 +9,7 @@
 ## ❄️ Members
 **전소미 팀**
 > '전'자공학과+'소'프트웨어학과+'미'디어학과  
-> -아주대학교 정보통신대학에 재학 중인 학우분들이 모여 다같이 팀 프로젝트를 진행했습니다.
+> -아주대학교 정보통신대학에 재학 중인 학우분들이 모여 다양한 아이디어를 공유하며 팀 프로젝트를 진행했습니다.
 * 김기윤 (팀장, 기획, BACK-END)  
 [visit github](https://github.com/ccrakel)
 * 김나현 (DATABASE)  
@@ -46,7 +46,7 @@
 ## ❄️ ERD design
 -수정 중~
 ## ❄️ Development result
-### 🔘 Access
+### * Access
   * **Sign in & Sign up**  
   (회원 가입 및 로그인)  
     <img src="https://user-images.githubusercontent.com/77534983/110496386-c482f300-8138-11eb-97a7-48c1c0875698.gif" width="300" height="600" />
