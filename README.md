@@ -94,8 +94,7 @@
   
   ------
   ### [Search]
-  * **Show all sorted clubs in the field Apply for the club![IMG_4882](https://user-images.githubusercontent.com/77534983/111032214-77f82a00-844e-11eb-9d08-33b57707ace1.PNG)
-**  
+  * **Show all sorted clubs in the field Apply for the club![IMG_4882]**  
   (분과별 동아리 리스트와 동아리 가입)  
   <img src="https://user-images.githubusercontent.com/77534983/111032151-31a2cb00-844e-11eb-825f-179801f66271.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111032223-821a2880-844e-11eb-8179-2cf50b4b2ea5.PNG" width="250" height="500" />
 
@@ -109,6 +108,8 @@
  ### [Timetable]
   * **Set personal timetable and modify it**  
   (개인 시간표 등록 및 수정)  
+  <img src="https://user-images.githubusercontent.com/77534983/111032292-cf969580-844e-11eb-9495-8d92121a357f.PNG" width="250" height="500" />
+
   
   ------
   ### [Settings]
