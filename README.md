@@ -59,7 +59,7 @@
 ### [Access]
   * **Sign in & Sign up**  
   (회원 가입 및 로그인)  
-  <img src="https://user-images.githubusercontent.com/77534983/111030419-7fff9c00-8445-11eb-874a-1d5c061cc792.PNG" width="300" height="600" />   <img src="https://user-images.githubusercontent.com/77534983/111030425-868e1380-8445-11eb-965a-e674671e1fc9.PNG" width="300" height="600" />
+  <img src="https://user-images.githubusercontent.com/77534983/111030419-7fff9c00-8445-11eb-874a-1d5c061cc792.PNG" width="300" height="600" />      <img src="https://user-images.githubusercontent.com/77534983/111030425-868e1380-8445-11eb-965a-e674671e1fc9.PNG" width="300" height="600" />
   
 
   
