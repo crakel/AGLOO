@@ -151,4 +151,4 @@ $ exit
 -김기윤: crakeldev@gmail.com   
 -김나현: glowring1@gmail.com  
 -류지호: fbwlgh07@gmail.com  
--이상훈: 이메일 작성해주세요~  
+-이상훈: sonheungminson@gmail.com
