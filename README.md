@@ -61,15 +61,15 @@
     <img src="https://user-images.githubusercontent.com/77534983/110784180-b6ee7a00-82ac-11eb-8142-d77eaa9165a8.gif" width="300" height="600" />
   
   * **Use notice board only by executives**  
-  (동아리 임원진들만의 공지사항 게시판 접근 권한)  
+  (동아리 임원진들만의 공지사항 게시판 작성 권한)  
     <img src="https://user-images.githubusercontent.com/77597604/110980929-bc7dba00-83a9-11eb-8259-7d68e272413e.gif" width="300" height="600" />
   
   * **Add any contents and comments in the boards by club memebers**  
-  (동아리원들의 공지사항 게시판을 제외한 모든 게시판 및 댓글 접근 권한)  
+  (동아리원들의 게시판 및 댓글 작성)  
     <img src="https://user-images.githubusercontent.com/77597604/110982014-5a25b900-83ab-11eb-87e5-ea54be2ade60.gif" width="300" height="600" />
   
   * **Provide a differentiated access to club memebers and non-club members for board**  
-  (비동아리 회원의 한정적인 접근 권한 범위: 활동 게시판)  
+  (비동아리 회원의 한정적인 접근 권한 범위: 활동 게시판 )  
   <img src="https://user-images.githubusercontent.com/77597604/110989272-fdc79700-83b4-11eb-918a-4b4542d6c2ff.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77597604/110989486-55fe9900-83b5-11eb-8b5f-63b81f85d700.gif" width="300" height="600" />
   
   * **Add image at boards**  
@@ -99,7 +99,7 @@
   (개인 시간표 등록 및 수정)  
   <img src="https://user-images.githubusercontent.com/77534983/110782749-df757480-82aa-11eb-91e4-3af66a74a5b5.gif" width="300" height="600" />______<img src="https://user-images.githubusercontent.com/77534983/110782848-f916bc00-82aa-11eb-83ad-bb1ad1c819ea.gif" width="300" height="600" />
   ------
-  ### 🔘 Settings
+  ### [Settings]
   * **sign out**  
   (로그아웃)
     
