@@ -29,7 +29,8 @@
         (in NAVER CLOUD PLATFORM)
   * MySQL  
   
-        -
+        -- 사용자, 동아리, 시간표, 게시판, 댓글 관련 데이터를 각각의 field에 알맞게 저장하고 새로운 데이터를 생성한다.
+        - 데이터의 무결성을 유지하기에 적합하고 중복된 데이터처리를 최소화할 수 있다.
 ## ❄️ Directory Description
   * /app-front
 
@@ -43,8 +44,7 @@
 
   * /database 
   
-        - putty로 할당받은 서버에 SSH 접속
-        - Mysql 버전: 5.7.33-0ubuntu0.18.04.1
+        - 
 ## ❄️ ERD design
 ![image](https://user-images.githubusercontent.com/77525358/111033115-f6ef6180-8452-11eb-89f1-1c1a8bc3adbb.png)  
 
