@@ -94,14 +94,16 @@
   
   ------
   ### [Search]
-  * **Show all sorted clubs in the field and search the specific club**  
-  (분과별 동아리 리스트와 동아리 찾기)  
+  * **Show all sorted clubs in the field Apply for the club![IMG_4882](https://user-images.githubusercontent.com/77534983/111032214-77f82a00-844e-11eb-9d08-33b57707ace1.PNG)
+**  
+  (분과별 동아리 리스트와 동아리 가입)  
+  <img src="https://user-images.githubusercontent.com/77534983/111032151-31a2cb00-844e-11eb-825f-179801f66271.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111032223-821a2880-844e-11eb-8179-2cf50b4b2ea5.PNG" width="250" height="500" />
+
+
   
    * **Create new clubs**  
   (동아리 생성)  
-  
-  * **Apply for the club and quit it**  
-  (동아리 가입 및 탈퇴)  
+  <img src="https://user-images.githubusercontent.com/77534983/111032080-fbfde200-844d-11eb-941d-682b828085fc.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111032117-16d05680-844e-11eb-8565-da66c34c6d3b.PNG" width="250" height="500" />
   
  ------ 
  ### [Timetable]
