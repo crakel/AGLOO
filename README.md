@@ -21,8 +21,14 @@
 
 ## ❄️ Technology used
   * React-native
+
+        - ios, 안드로이드에서 동시개발 가능한 javascript 기반 모바일 애플리케이션 프레임워크
   * Android Studio
+
+        - Android Virtual Device(AVD)를 통해 android 기기 테스트
   * Expo
+
+        - Expo 어플을 통해 react-native로 구현한 app을 내 기기에서 직접 실행 가능
   * Javascript
   * Node.js + Express.js
 
@@ -34,6 +40,10 @@
         - 데이터의 무결성을 유지하기에 적합하고 중복된 데이터처리를 최소화할 수 있다.
 ## ❄️ Directory Description
   * /app-front
+
+         - 각 Screen 별 react-native 코드
+         - react-navigation v5의 tab-navigator 와 stack-navigator을 사용해 screen 사이의 관계 설정
+         
   * /back-end
 
         - NCP 서버에서 데몬 프로세스로 있는 node.js 코드
@@ -106,6 +116,12 @@
 ## ❄️ How to process 
 * Running front-end
 ```bash
+# intall
+$ npm install =g react-native-cli
+# make my project
+$ react=native init myProject
+# start project
+$ npm start
 
 ```
 * Running back-end
