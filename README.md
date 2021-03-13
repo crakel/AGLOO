@@ -74,6 +74,9 @@
   
    * **:zap::zap:Show vacant time between chosen members in the club:zap::zap:**  
   ***(동아리 내에서 선택한 동아리원끼리의 겹치는 공강 시간 계산)***  
+  <img src="https://user-images.githubusercontent.com/77534983/111030947-6744b580-8448-11eb-8589-f4bbf8a74c33.PNG" width="300" height="600" /> <img src="https://user-images.githubusercontent.com/77534983/111030952-775c9500-8448-11eb-98e7-d1f4f4d13676.PNG" width="300" height="600" />
+
+
   
   * **Use notice board only by executives**  
   (동아리 임원진들만의 공지사항 게시판 작성 권한)  
