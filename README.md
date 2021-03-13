@@ -117,7 +117,7 @@
 * Running front-end
 ```bash
 # intall
-$ npm install =g react-native-cli
+$ npm install -g react-native-cli
 # make my project
 $ react=native init myProject
 # start project
