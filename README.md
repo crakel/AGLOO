@@ -100,7 +100,7 @@
  ------ 
  ### [Timetable]
   * **Set personal timetable and modify it**  
-  (개인 시간표 등록 및 수정)  
+  (개인 시간표 등록 및 수정)   
   <img src="https://user-images.githubusercontent.com/77534983/111032292-cf969580-844e-11eb-9495-8d92121a357f.PNG" width="250" height="500" />
 
   
