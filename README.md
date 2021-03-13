@@ -2,7 +2,7 @@
 
 
 **:bulb: 아주인들을 위한 동아리, 소모임 SNS APP**
-> 동아리원끼리는 서로 등록해놓은 시간표를 확인하고 겹치는 공강 시간은 언제인지 계산해주는 기능과  
+> 동아리원끼리는 서로 등록해놓은 시간표를  겹치는 공강 시간은 언제인지 계산해주는 기능과  
 > 동아리 임원은 동아리에 대한 정보를 기입하고 활동내역들을 올릴 수 있고 이를 바탕으로 외부에서도 공개된 정보를 보고 동아리 홍보 또한 가능한 서비스를 가진 통합적인 플랫폼
 ## ❄️ Period
 2021.01 ~ 2021.03
@@ -52,7 +52,7 @@
 ### [Access]
   * **Sign in & Sign up**  
   (회원 가입 및 로그인)  
-  <img src="https://user-images.githubusercontent.com/77534983/111030419-7fff9c00-8445-11eb-874a-1d5c061cc792.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111030425-868e1380-8445-11eb-965a-e674671e1fc9.PNG" width="250" height="500" />
+   <img src="https://user-images.githubusercontent.com/77534983/111030419-7fff9c00-8445-11eb-874a-1d5c061cc792.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111030425-868e1380-8445-11eb-965a-e674671e1fc9.PNG" width="250" height="500" />
   
 
   
