@@ -30,6 +30,13 @@ const process = {
         const response = await user.register();
         return res.json(response);
     },
+
+    info: async (req, res) => {
+        req.body.id = req.params.id;
+        const user = new User(req.body);
+        const response = await user.info();
+        return res.json(response);
+    },
 };
 
 const time = {
@@ -94,9 +101,6 @@ const board = {
         if (req.file) {
             req.body.img = '/upload/board/' + req.file.filename;
         }
-        else {
-            req.body.img = '';
-        }
         const board = new Board(req.body);
         const response = await board.writePost();
         return res.json(response);
@@ -105,6 +109,9 @@ const board = {
     editPost: async (req, res) => {
         req.body.board = req.params.board;
         req.body.idx = req.params.idx;
+        if (req.file) {
+            req.body.img = '/upload/board/' + req.file.filename;
+        }
         const board = new Board(req.body);
         const response = await board.editPost();
         return res.json(response);

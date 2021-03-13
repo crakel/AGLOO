@@ -56,6 +56,17 @@ class User {
             return { success: false, msg: err };
         }
     }
+    
+    async info() {
+        const client = this.body;
+        try {
+            const response = await UserStorage.getUserInfo(client.id);
+            return response;
+        } catch (err) {
+            return { success: false, msg: err };
+        }
+    }
+
 
     async getTime() {
         const client = this.body;

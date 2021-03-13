@@ -40,6 +40,9 @@ router.post("/register", ctrl.process.register);
 // 토큰 인증 API
 router.post("/auth", auth.auth);
 
+// 유저 정보 API
+router.get("/user/:id/", ctrl.process.info);
+
 // 개인 피드 API
 router.get("/feed/:id/:board", ctrl.board.feed);
 
