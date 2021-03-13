@@ -67,6 +67,10 @@
 ### [Home]
   * **Home screen that shows the latest news and the clubs you've joined and upload information of the clubs when you select the club icon**  
   (가입한 동아리와 최신 게시물이 나오는 홈화면 및 동아리 선택시 소개글 업로드)  
+  <img src="https://user-images.githubusercontent.com/77534983/111030704-16808d00-8447-11eb-9cb9-95a867a3d47f.PNG" width="300" height="600" /> <img src="https://user-images.githubusercontent.com/77534983/111030726-3617b580-8447-11eb-8d68-4bd0872a2926.PNG" width="300" height="600" /> <img src="https://user-images.githubusercontent.com/77534983/111030745-492a8580-8447-11eb-805f-ae98023d4f62.PNG" width="300" height="600" />
+
+
+
   
    * **:zap::zap:Show vacant time between chosen members in the club:zap::zap:**  
   ***(동아리 내에서 선택한 동아리원끼리의 겹치는 공강 시간 계산)***  
