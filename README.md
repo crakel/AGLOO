@@ -74,27 +74,23 @@
   
    * **:zap::zap:Show vacant time between chosen members in the club:zap::zap:**  
   ***(동아리 내에서 선택한 동아리원끼리의 겹치는 공강 시간 계산)***  
-  <img src="https://user-images.githubusercontent.com/77534983/111030947-6744b580-8448-11eb-8589-f4bbf8a74c33.PNG" width="300" height="600" /> <img src="https://user-images.githubusercontent.com/77534983/111030952-775c9500-8448-11eb-98e7-d1f4f4d13676.PNG" width="300" height="600" />
+  <img src="https://user-images.githubusercontent.com/77534983/111030947-6744b580-8448-11eb-8589-f4bbf8a74c33.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111030952-775c9500-8448-11eb-98e7-d1f4f4d13676.PNG" width="250" height="500" />
 
 
   
   * **Use notice board only by executives**  
   (동아리 임원진들만의 공지사항 게시판 작성 권한)  
+  <img src="https://user-images.githubusercontent.com/77534983/111031676-1040df80-844c-11eb-8809-02622a4e0763.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111031689-1fc02880-844c-11eb-8069-5dc9ab054015.PNG" width="250" height="500" />
+
+
   
   
-  * **Add any contents and comments in the boards by club memebers**  
-  (동아리원들의 게시판 및 댓글 작성)  
-  
-  
-  * **Provide a differentiated access to club memebers and non-club members for board**  
-  (비동아리 회원의 한정적인 접근 권한 범위: 활동 게시판 )  
-  
-  * **Add image at boards**  
-  (게시판에 이미지 첨부 가능)  
-  
-  * **All contents and comments of boards can be controlled by executives**  
-  (임원진은 모든 게시판과 댓글 수정 및 삭제 가능)  
-  
+  * **Add any contents,comments and pictures in the boards by club members**  
+  (자유게시판 및 사진첨부가 가능한 활동게시판)   
+  <img src="https://user-images.githubusercontent.com/77534983/111031779-880f0a00-844c-11eb-9f5f-dd7b927e54ff.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111031794-9f4df780-844c-11eb-9f01-0677317d493c.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111031805-ad9c1380-844c-11eb-867a-0a272afcb5ab.PNG" width="250" height="500" />
+
+
+
   
   ------
   ### [Search]
