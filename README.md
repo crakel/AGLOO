@@ -108,6 +108,7 @@
   ### [Settings]
   * **sign out**  
   (로그아웃)
+<img src="https://user-images.githubusercontent.com/77597604/111058415-eb8f4b00-84d1-11eb-988a-cf2737672469.png" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77597604/111058450-1083be00-84d2-11eb-9629-99562afd80f7.png" width="250" height="500" />
     
 ## ❄️ How to process 
 * Running front-end
