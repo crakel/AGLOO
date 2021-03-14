@@ -45,7 +45,7 @@
   * /database 
   
         - 규정한 테이블과 테이블 간의 연관관계(외래키)를 이용해 필요한 정보를 구하는 방식인 RDBMS 사용
-        - MySQL 이벤트 스케쥴러를 이용해 5년에 한 번 테이블(게시판, 댓글) 데이터 삭제
+        - MySQL 이벤트 스케쥴러를 이용해 5년에 한 번 테이블(게시판, 댓글) 자동 데이터 삭제
 ## ❄️ ERD design
 ![image](https://user-images.githubusercontent.com/77525358/111033115-f6ef6180-8452-11eb-89f1-1c1a8bc3adbb.png)  
 
