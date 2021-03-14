@@ -19,7 +19,7 @@
 [참고](http://blog.naver.com/PostView.nhn?blogId=azure0777&logNo=220764784580&categoryNo=18&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView)
 
 ## ER diagram
- ![image](https://user-images.githubusercontent.com/77525358/111061122-11721b00-84e5-11eb-9159-a2d3dfe75cc8.png)
+ ![image](https://user-images.githubusercontent.com/77525358/111063774-ecd16f80-84f3-11eb-8e0d-1818f277c516.png)
 * **마름모**: 관계 타입
 * **동그라미(실선)**: 애트리뷰트 (엔티티를 기술하는 속성)  
            복합 애트리뷰트는 더 작은 구성요소로 나눌 수 있고 독립적인 의미를 가지는 애트리뷰트이고,  
