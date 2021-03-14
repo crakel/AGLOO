@@ -55,9 +55,9 @@
       -[How to convert an ER diagram to the Relational Data Model](https://www.youtube.com/watch?v=CZTkgMoqVss)
       
 * Schema diagram (spread sheet 사용)
-  ![image](https://user-images.githubusercontent.com/77525358/110263144-17ee2780-7ff9-11eb-9379-db48519316f0.PNG)
-  ![image](https://user-images.githubusercontent.com/77525358/111023255-53368f00-841b-11eb-8124-56d4c7fd5e35.png)
-  ![image](https://user-images.githubusercontent.com/77525358/110263124-0b69cf00-7ff9-11eb-8ef3-6de22abc4f3f.PNG)
+  ![image](https://user-images.githubusercontent.com/77525358/111061852-b04c4680-84e8-11eb-88d8-e8821ae209c0.png)
+  ![image](https://user-images.githubusercontent.com/77525358/111061827-8b57d380-84e8-11eb-85b0-2bbcccd45f4b.png)
+  ![image](https://user-images.githubusercontent.com/77525358/111061875-d245c900-84e8-11eb-9b9e-be9472ac3c5a.png)
   **:heavy_check_mark: FOREIGN KEY!!!(데이터 무결성 보장) :heavy_check_mark:**  
   외래키가 되기 위해서는 두 릴레이션 스키마 R1과 R2 사이의 참조 무결성 제약 조건이 만족되어야 한다. 릴레이션 스키마 R1   의 어떤 애트리뷰트들의 집합 FK가 다음의 규칙을 만족하면 FK는 릴레이션 R2를 참조하는 R1의 외래키이다.
   1. FK의 애트리뷰트는 R2의 기본키 PK의 애트리뷰트와 동일한 도메인을 가진다.
