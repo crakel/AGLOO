@@ -117,7 +117,7 @@
 # intall
 $ npm install -g react-native-cli
 # make my project
-$ react=native init myProject
+$ react-native init myProject
 # start project
 $ npm start
 
