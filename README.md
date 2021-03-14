@@ -87,7 +87,7 @@
   
   ------
   ### [Search]
-  * **Show all sorted clubs in the field & Apply for the club!**
+  * **Show all sorted clubs in the field & Apply for the club!**   
   (분과별 동아리 리스트와 동아리 가입)  
   <img src="https://user-images.githubusercontent.com/77534983/111032151-31a2cb00-844e-11eb-825f-179801f66271.PNG" width="250" height="500" /> <img src="https://user-images.githubusercontent.com/77534983/111032223-821a2880-844e-11eb-8179-2cf50b4b2ea5.PNG" width="250" height="500" />
 
