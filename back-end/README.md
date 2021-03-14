@@ -36,7 +36,7 @@
 
 ![agloo api](https://user-images.githubusercontent.com/59333136/111058391-bbe04300-84d1-11eb-9475-93e8fadde5a2.png)
 
-### [More in Postman](https://web.postman.co/workspace/af686879-d299-4d24-876f-5d55adb417c5/documentation/14449875-a05b1093-74a6-49cd-9447-98328130933b)
+### [More in Postman](https://web.postman.co/workspace/My-Workspace~af686879-d299-4d24-876f-5d55adb417c5/documentation/14449875-a05b1093-74a6-49cd-9447-98328130933b)
 
 <br>
 <br>
