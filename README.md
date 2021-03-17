@@ -11,7 +11,7 @@
 > '전'자공학과+'소'프트웨어학과+'미'디어학과  
 > -아주대학교 정보통신대학에 재학 중인 학우분들과  다양한 아이디어를 공유하며 팀 프로젝트를 진행했습니다.
 * 김기윤 (팀장, 기획, BACK-END)  
-[visit github](https://github.com/ccrakel)
+[visit github](https://github.com/crakel)
 * 김나현 (DATABASE)  
 [visit github](https://github.com/6twinsniwt9)
 * 류지호 (APP FRONT-END)  
